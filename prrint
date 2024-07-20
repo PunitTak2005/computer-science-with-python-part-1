@@ -1,7 +1,0 @@
-print("Hello Nathan","Hello Lalit")
-greet1="HELLO NATHAN"
-greet2="HELLO LALIT"
-name1="NATHAN"
-name2="LALIT"
-print(greet1,greet2)
-print("HELLO",name1,",",name2)
