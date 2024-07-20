@@ -1,0 +1,6 @@
+Str1='''Hello
+World
+There I Come!!!
+Cheers.
+'''
+print(Str1)
