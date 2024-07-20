@@ -1,0 +1,26 @@
+what are literals ? how many types of literals are available in python?
+Literals are fixed values that are written directly in the code, without any computation or evaluation. They are used to represent constant values in a program.
+
+In Python, there are several types of literals:
+
+1. Integer literals: Positive or negative whole numbers, like 42 or -10.
+
+2. Floating-point literals: Decimal numbers, like 3.14 or -0.5.
+
+3. String literals: Sequences of characters enclosed in quotes (single or double), like 'hello' or "goodbye".
+
+4. Boolean literals: The values True and False.
+
+5. Complex literals: Numbers with both real and imaginary parts, like 3 + 4j.
+
+6. Byte literals: Sequences of bytes, like b'hello'.
+
+7. Bytearray literals: Mutable sequences of bytes, like bytearray(b'hello').
+
+8. List literals: Ordered collections of values enclosed in square brackets, like [1, 2, 3].
+
+9. Tuple literals: Ordered, immutable collections of values enclosed in parentheses, like (1, 2, 3).
+
+10. Dict literals: Unordered collections of key-value pairs enclosed in curly braces, like {'a': 1, 'b': 2}.
+
+These literals are used to represent constant values in Python code, making it easier to write and understand programs.
