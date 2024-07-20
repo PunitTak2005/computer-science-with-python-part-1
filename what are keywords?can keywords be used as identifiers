@@ -1,0 +1,25 @@
+Keywords are reserved words in a programming language that have a special meaning or function. They are used to define the structure and syntax of a program, and are typically used to control the flow of execution, define data types, and specify actions.
+
+In Python, keywords are reserved words that cannot be used as identifiers (variable names, function names, etc.) unless they are prefixed with a special character (such as an underscore).
+
+Here are some examples of Python keywords:
+
+- if
+- else
+- for
+- while
+- def
+- class
+- try
+- except
+- import
+- from
+
+Keywords cannot be used as identifiers in Python, unless they are prefixed with a special character, such as an underscore (_). This is to avoid conflicts with the reserved meaning of the keyword.
+
+For example:
+
+- if is a keyword, so you cannot use it as a variable name: if = 5 (SyntaxError)
+- _if is not a keyword, so you can use it as a variable name: _if = 5 (valid)
+
+Using keywords as identifiers can lead to confusion and errors, so it's generally best to avoid using them as identifiers altogether. Instead, choose descriptive and meaningful names for your variables and functions.
