@@ -1,0 +1,15 @@
+Python allows four types of integer literals:
+
+1. Decimal integers: Written in base 10, without any prefix. Example: 42
+2. Binary integers: Written in base 2, prefixed with 0b or 0B. Example: 0b101010
+3. Octal integers: Written in base 8, prefixed with 0o or 0O. Example: 0o52
+4. Hexadecimal integers: Written in base 16, prefixed with 0x or 0X. Example: 0x2A
+
+Here are some examples:
+
+- Decimal: 10, 20, 30
+- Binary: 0b1010, 0b1100, 0b1111
+- Octal: 0o12, 0o25, 0o37
+- Hexadecimal: 0x1A, 0x2B, 0x3C
+
+Note that the prefix is case-insensitive, so 0B and 0b are equivalent, as are 0O and 0o, and 0X and 0x.
