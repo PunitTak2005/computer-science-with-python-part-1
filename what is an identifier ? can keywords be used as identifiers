@@ -1,0 +1,26 @@
+An identifier is a name given to a variable, function, module, or other object in a programming language. It is a sequence of characters that identifies a specific entity in the code. Identifiers are used to declare and access variables, functions, and other objects in a program.
+
+In Python, identifiers must follow these rules:
+
+1. They must start with a letter (a-z or A-Z) or an underscore (_).
+2. They can only contain letters, digits (0-9), and underscores (_).
+3. They cannot contain spaces, symbols, or special characters (except for underscores).
+4. They are case-sensitive (e.g., myvariable and MyVariable are different identifiers).
+
+Keywords cannot be used as identifiers in Python, unless they are prefixed with a special character (such as an underscore). This is to avoid conflicts with the reserved meaning of the keyword.
+
+For example:
+
+- my_variable is a valid identifier
+- if is a keyword and cannot be used as an identifier
+- _if is not a keyword and can be used as an identifier
+
+Using keywords as identifiers can lead to confusion and errors, so it's generally best to avoid using them as identifiers altogether. Instead, choose descriptive and meaningful names for your variables and functions.
+
+Here are some examples of valid identifiers in Python:
+
+- my_variable
+- hello_world
+- calculate_area
+- student_name
+- _private_variable
