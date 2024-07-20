@@ -1,0 +1,44 @@
+In programming, a token is a single unit of meaning in the code, such as a keyword, identifier, symbol, or literal value. Tokens are the building blocks of a programming language's syntax.
+
+In Python, the following tokens are available:
+
+1. Keywords: These are reserved words with special meaning, such as:
+    - if
+    - else
+    - for
+    - while
+    - def
+    - class
+    - try
+    - except
+2. Identifiers: These are names given to variables, functions, and modules, such as:
+    - my_variable
+    - my_function
+    - my_module
+3. Symbols: These are special characters used in the code, such as:
+    - + (addition)
+    - - (subtraction)
+    - * (multiplication)
+    - / (division)
+    - = (assignment)
+    - () (parentheses)
+    - [] (square brackets)
+    - {} (curly braces)
+4. Literals: These are values that are written directly in the code, such as:
+    - 123 (integer)
+    - 3.14 (float)
+    - "hello" (string)
+    - True (boolean)
+5. Operators: These are symbols used for operations, such as:
+    - + (addition)
+    - - (subtraction)
+    - * (multiplication)
+    - / (division)
+    - ** (exponentiation)
+6. Delimiters: These are symbols used to separate tokens, such as:
+    - , (comma)
+    - . (dot)
+    - : (colon)
+7. Whitespace: These are spaces, tabs, and newline characters that separate tokens.
+
+These tokens are the basic components of the Python language, and they are used to write Python code.
