@@ -1,6 +1,20 @@
+
+print(Str1)
 Str1='''Hello
 World
 There I Come!!!
 Cheers.
 '''
 print(Str1)
+str3='''a
+b
+c'''
+print(str3)
+str2="""HELLO
+WORLD.
+THIS IS ANOTHER MULTILINE STRING."""
+print(str2)
+nstr='''he\
+ll\\
+o'''
+print(nstr)
