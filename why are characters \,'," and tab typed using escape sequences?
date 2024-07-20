@@ -1,0 +1,14 @@
+Characters like \, }, ", and tab are typed using escape sequences because they have special meanings in Python:
+
+- \ is used to escape characters, so \\ is used to represent a literal backslash.
+- " is used to delimit string literals, so \" is used to represent a literal double quote within a string.
+- ' is used to delimit string literals, so \' is used to represent a literal single quote within a string.
+- Tab is a whitespace character, and \t is used to represent a literal tab character within a string.
+
+Using escape sequences allows you to include these special characters in strings without confusing Python's syntax. For example:
+
+- print("Hello, \"World\"!") prints a string with double quotes.
+- print("Hello, \'World\'!") prints a string with single quotes.
+- print("Hello,\tWorld!") prints a string with a tab character.
+
+Escape sequences are used to "escape" the special meaning of these characters, allowing you to use them literally in your code.
