@@ -1,0 +1,18 @@
+Here's the breakdown:
+
+Valid identifiers:
+
+- Data_rec: Valid because it starts with a letter and only contains letters, digits, and underscores.
+- _data: Valid because it starts with an underscore and only contains letters, digits, and underscores.
+- lambda: Valid because it's a reserved keyword in Python, but it's also a valid identifier for a variable or function name.
+
+Invalid identifiers:
+
+- 1 data: Invalid because it starts with a digit, which is not allowed.
+- data: Valid, but it's a bare name, which is not recommended as it can conflict with built-in names.
+- my.file: Invalid because it contains a dot (.), which is not allowed in identifiers.
+- elif: Invalid because it's a reserved keyword in Python and can't be used as an identifier.
+- switch: Invalid because it's a reserved keyword in Python and can't be used as an identifier.
+- break: Invalid because it's a reserved keyword in Python and can't be used as an identifier.
+
+Note that while lambda is a valid identifier, it's generally not a good idea to use it as a variable or function name, as it's a reserved keyword with a specific meaning in Python. Similarly, while data is a valid identifier, it's a bare name that could potentially conflict with built-in names or other variables, so it's better to use a more descriptive and unique name.
