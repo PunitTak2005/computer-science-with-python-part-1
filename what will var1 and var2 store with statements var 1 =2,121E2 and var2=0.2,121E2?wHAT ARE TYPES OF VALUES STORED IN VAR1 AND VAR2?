@@ -1,0 +1,18 @@
+what will var1 and var2 store with statements var 1 =2,121E2 and var2=0.2,121E2?wHAT ARE TYPES OF VALUES STORED IN VAR1 AND VAR2?
+
+Based on the statements:
+
+1. var1 = 2,121E2
+2. var2 = 0.2,121E2
+
+The values stored in var1 and var2 would be:
+
+1. var1 would store the value 212100 (integer)
+2. var2 would store the value 0.2121E4 (floating-point number)
+
+The types of values stored in var1 and var2 would be:
+
+1. var1 would store an integer value
+2. var2 would store a floating-point value (in scientific notation)
+
+Note that the E in 121E2 represents the exponent in scientific notation, which means "times 10 to the power of". So 121E2 means 121 × 10^2, which equals 212100. Similarly, 0.2,121E2 means 0.2121 × 10^4.
