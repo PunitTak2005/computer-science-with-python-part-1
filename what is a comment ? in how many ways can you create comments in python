@@ -1,0 +1,27 @@
+what is a comment ? in how many ways can you create comments in python
+
+In programming, a comment is a piece of text that is ignored by the compiler or interpreter. Comments are used to add notes, explanations, or documentation to the code, making it easier for humans to understand the code's purpose, logic, and functionality.
+
+In Python, you can create comments in two ways:
+
+1. Single-line comments: Start with the # symbol, followed by the comment text. The comment extends to the end of the line.
+
+# This is a single-line comment
+print("Hello")  # This is another single-line comment
+
+1. Multi-line comments (also known as docstrings): Use three double quotes """ or three single quotes ''' to delimit the comment. The comment can span multiple lines.
+
+"""
+This is a multi-line comment
+that spans multiple lines
+"""
+print("Hello")
+
+'''
+This is another multi-line comment
+that also spans multiple lines
+'''
+
+Note that multi-line comments are often used as docstrings, which are used to document functions, classes, and modules. They are also used to generate documentation automatically using tools like Sphinx.
+
+It's important to use comments to explain your code, making it more readable and maintainable. However, it's also important to strike a balance and not overcomment, as excessive comments can make the code harder to read.
