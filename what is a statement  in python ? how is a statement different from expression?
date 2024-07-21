@@ -1,0 +1,30 @@
+what is a statement  in python ? how is a statement different from expression?
+
+In Python, a statement is a line of code that performs an action or sets a value. It's a complete instruction that tells the program to do something. Statements typically end with a newline character or a semicolon (;).
+
+Examples of statements in Python include:
+
+1. Assignment statement: x = 5 (assigns the value 5 to the variable x)
+2. Print statement: print("Hello") (prints the string "Hello")
+3. Conditional statement: if x > 5: print("x is greater than 5") (checks the condition and executes the code if true)
+4. Loop statement: for i in range(5): print(i) (executes the code repeatedly for a specified number of iterations)
+5. Function definition statement: def greet(name): print("Hello, " + name) (defines a function named greet)
+
+A statement is different from an expression in that:
+
+- An expression evaluates to a value, while a statement performs an action or sets a value.
+- An expression can be part of a statement, but a statement is a complete instruction that stands alone.
+- Statements typically don't evaluate to a value, while expressions always do.
+
+Here's an example to illustrate the difference:
+
+x = 5 is a statement (assignment statement) that sets the value of x to 5.
+
+5 is an expression (literal expression) that evaluates to the value 5.
+
+In summary:
+
+- Expressions evaluate to values.
+- Statements perform actions or set values.
+
+While expressions are building blocks of statements, not all expressions are statements, and not all statements are expressions.
