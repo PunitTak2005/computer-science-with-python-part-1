@@ -1,0 +1,25 @@
+Here are some built-in literals in Python:
+
+1. Boolean literals:
+    - True
+    - False
+2. Integer literals:
+    - Decimal: 0, 1, 2, ...
+    - Hexadecimal: 0x0, 0x1, 0x2, ...
+    - Octal: 0o0, 0o1, 0o2, ...
+    - Binary: 0b0, 0b1, 0b10, ...
+3. Floating-point literals:
+    - Decimal: 0.0, 1.0, 2.0, ...
+    - Exponential: 1.0e0, 2.0e1, 3.0e-1, ...
+4. String literals:
+    - Single-quoted: 'hello', 'goodbye'
+    - Double-quoted: "hello", "goodbye"
+    - Triple-quoted: '''hello''', """goodbye"""
+5. Complex literals:
+    - 3+4j, 2-3j, 1+2j
+6. Bytes literals:
+    - b'hello', b'goodbye'
+7. None literal:
+    - None
+
+These are some of the built-in literals in Python. There are others, like Ellipsis and NotImplemented, but these are the most commonly used ones.
