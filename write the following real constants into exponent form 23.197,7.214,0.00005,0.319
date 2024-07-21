@@ -1,0 +1,16 @@
+Here are the real constants written in exponent form:
+
+- 23.197 = 2.3197 × 10^1
+- 7.214 = 7.214 × 10^0 (or simply 7.214, since 10^0 is 1)
+- 0.00005 = 5 × 10^-5
+- 0.319 = 3.19 × 10^-1
+
+Note that the exponent form is also known as scientific notation. It's a way of writing very large or very small numbers in a more compact and readable form. The format is:
+
+a × 10^b
+
+Where:
+
+- a is the significand (or mantissa)
+- b is the exponent
+- 10 is the base (in this case, decimal)
