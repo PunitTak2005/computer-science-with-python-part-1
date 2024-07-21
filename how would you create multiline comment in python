@@ -1,0 +1,34 @@
+how would you create multiline comment in python
+
+
+In Python, you can create a multiline comment using three double quotes """ or three single quotes '''. Here's how:
+
+Using three double quotes """:
+
+"""
+This is a multiline comment
+that spans multiple lines
+You can write as much text as you want
+"""
+
+Using three single quotes ''':
+
+'''
+This is also a multiline comment
+that spans multiple lines
+You can write as much text as you want
+'''
+
+These multiline comments are also known as docstrings, and they are often used to document functions, classes, and modules. They can be accessed using the __doc__ attribute, and they are also used by tools like Sphinx to generate documentation automatically.
+
+Here's an example of using a multiline comment as a docstring for a function:
+
+def greet(name):
+    """
+    This is a function to greet someone
+    It takes a name as input
+    and returns a personalized greeting message
+    """
+    return "Hello, " + name + "!"
+
+In this example, the multiline comment is used to document the function's purpose, parameters, and return value.
