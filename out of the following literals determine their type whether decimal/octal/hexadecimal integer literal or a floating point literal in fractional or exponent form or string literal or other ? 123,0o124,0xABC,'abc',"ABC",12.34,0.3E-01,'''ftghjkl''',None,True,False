@@ -1,0 +1,14 @@
+out of the following literals determine their type whether decimal/octal/hexadecimal integer literal or a floating point literal in fractional or exponent form or string literal or other ? 123,0o124,0xABC,'abc',"ABC",12.34,0.3E-01,'''ftghjkl''',None,True,False
+Here are the types for each literal:
+
+1. 123 - Decimal integer literal
+2. 0o124 - Octal integer literal
+3. 0xABC - Hexadecimal integer literal
+4. 'abc' - String literal
+5. "ABC" - String literal
+6. 12.34 - Floating-point literal (fractional form)
+7. 0.3E-01 - Floating-point literal (exponent form)
+8. '''ftghjkl''' - String literal (triple-quoted)
+9. None - None literal (special constant)
+10. True - Boolean literal
+11. False - Boolean literal
