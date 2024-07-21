@@ -1,0 +1,21 @@
+String literals in Python are sequences of characters enclosed in quotes, used to represent a string value. There are three ways to create string literals in Python:
+
+1. Single quotes: Enclose the string in single quotes ('): 'Hello, World!'
+2. Double quotes: Enclose the string in double quotes (") : "Hello, World!"
+3. Triple quotes: Enclose the string in triple quotes (''' or """): '''Hello, World!''' or """Hello, World!"""
+
+All three forms are equivalent and can be used interchangeably. However, there are some differences in how they handle special characters and multiline strings:
+
+- Single and double quotes:
+    - Can contain newline characters (\n) but not raw newline characters.
+    - Must escape quotes of the same type (e.g., \' or \").
+- Triple quotes:
+    - Can contain raw newline characters and quotes of any type without escaping.
+    - Often used for multiline strings and docstrings.
+
+For example:
+
+- Single-quoted string: 'Hello, ' + "World!" (concatenation)
+- Multiline string with triple quotes: """Hello, World! \nThis is a multiline string."""
+
+In summary, all three forms of string literals are equivalent, but triple quotes offer more flexibility for multiline strings and raw character inclusion.
