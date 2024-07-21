@@ -1,0 +1,25 @@
+what is the difference between full line comment and inline comment
+
+In programming, comments are used to add notes or explanations to the code. There are two types of comments:
+
+Full-line comment:
+A full-line comment is a comment that occupies an entire line of code. It starts at the beginning of the line and continues until the end of the line. Everything on that line is ignored by the compiler or interpreter.
+
+Example:
+
+# This is a full-line comment
+
+Inline comment:
+An inline comment is a comment that is added to the end of a line of code. It starts after the code on that line and continues until the end of the line.
+
+Example:
+
+x = 5  # This is an inline comment
+
+The key differences between full-line and inline comments are:
+
+- Position: Full-line comments occupy a whole line, while inline comments share a line with code.
+- Purpose: Full-line comments are often used for larger explanations or documentation, while inline comments are used for brief notes or clarifications.
+- Readability: Full-line comments can make the code more readable by separating sections or explaining complex logic, while inline comments can make the code more concise but may be harder to read if overused.
+
+In summary, full-line comments provide a clear separation between code and comments, while inline comments provide a concise way to add notes directly to the code.
