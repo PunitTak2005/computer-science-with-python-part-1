@@ -1,0 +1,15 @@
+what are two Boolean literals in python?
+
+The two Boolean literals in Python are:
+
+1. True
+2. False
+
+These literals represent the two possible Boolean values in Python, which are used to represent truth or falsehood, yes or no, or on or off. They are often used in conditional statements, loops, and logical operations.
+
+For example:
+
+- if True: print("This will always print")
+- if False: print("This will never print")
+
+Note that Boolean literals are case-sensitive, so true and false are not valid Boolean literals in Python. They must be written as True and False.
