@@ -6,3 +6,12 @@ a="hello"
 type(a)
 name=input("What is your name?")
 age=input("Enter Your age:")
+age=int(age)
+age=1
+marks=input("Enter marks : ")
+marks=float(marks)
+marks + 1
+marks=float(input("Enter marks : "))
+age=input("What is your age ?")
+print(type(marks))
+print(type(age))
