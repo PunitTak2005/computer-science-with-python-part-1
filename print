@@ -10,3 +10,11 @@ print(x,y)
 print(x)
 x=20
 print(x)
+x=0 #variable x created now
+print(x)
+x=20
+print(x)
+x=10
+print(x)
+x="Helloworld"
+print(x)
