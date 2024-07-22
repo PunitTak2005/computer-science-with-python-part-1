@@ -1,7 +1,12 @@
-
 a,b,c=5,10,7
 b,c,a=a+1,b+2,c-1
 print(a,b,c)
 p,q=3,5
 q,r=p-2,p+2
 print(p,q,r)
+x,x=20,30
+y,y=x+10,x+20
+print(x,y)
+print(x)
+x=20
+print(x)
