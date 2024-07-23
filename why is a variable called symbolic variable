@@ -1,0 +1,18 @@
+why is a variable called symbolic variable?
+
+A variable is called a "symbolic variable" because it uses a symbol, such as a letter or a word, to represent a value or a concept. In other words, the variable is a symbol that stands for something else.
+
+In programming and mathematics, variables are used to represent unknown or changing values. Instead of using the actual value, a symbol is used to represent it. This symbol is the variable.
+
+For example, in the equation x = 5, x is a symbolic variable that represents the value 5. The symbol x is used to represent the value, rather than the value itself.
+
+The term "symbolic variable" emphasizes that the variable is a symbol or a representation, rather than the actual value or concept it represents.
+
+Here are some reasons why variables are called symbolic:
+
+1. Representation: Variables represent values or concepts, rather than being the actual value.
+2. Abstraction: Variables provide an abstract representation of a value, making it easier to work with and manipulate.
+3. Flexibility: Symbolic variables can be used to represent different values or concepts, making them flexible and reusable.
+4. Readability: Using symbols instead of actual values makes code and equations more readable and easier to understand.
+
+In summary, a variable is called a symbolic variable because it uses a symbol to represent a value or concept, providing a flexible and abstract representation that makes it easier to work with and understand.
