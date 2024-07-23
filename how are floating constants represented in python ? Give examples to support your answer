@@ -1,0 +1,44 @@
+In Python, floating-point constants are represented as decimal numbers with a fractional part. Here are some examples:
+
+1. Simple floating-point numbers:
+
+
+x = 3.14
+y = -0.5
+
+
+1. Floating-point numbers with exponent (scientific notation):
+
+
+x = 1.23e4  # equivalent to 12300.0
+y = -4.56e-3  # equivalent to -0.00456
+
+
+1. Floating-point numbers with positive and negative infinity:
+
+
+x = float('inf')  # positive infinity
+y = float('-inf')  # negative infinity
+
+
+1. Floating-point numbers with NaN (Not a Number):
+
+
+x = float('nan')  # NaN
+
+
+Note that Python's floating-point representation follows the IEEE 754 standard, which means it uses binary fractions to represent decimal numbers. This can lead to small rounding errors in some cases.
+
+For example:
+
+
+x = 0.1 + 0.2
+print(x)  # Output: 0.30000000000000004
+
+
+To avoid such issues, you can use the decimal module, which provides support for fast correctly rounded decimal floating point arithmetic.
+
+
+from decimal import Decimal
+x = Decimal('0.1') + Decimal('0.2')
+print(x)  # Output: 0.3
