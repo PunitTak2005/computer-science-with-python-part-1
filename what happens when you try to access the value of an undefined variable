@@ -1,0 +1,13 @@
+In Python, when you try to access the value of an undefined variable, you'll get a NameError. Here's an example:
+
+
+print(x)
+
+
+Output:
+
+
+NameError: name 'x' is not defined
+
+
+This error occurs because Python doesn't know what x is, as it hasn't been defined or assigned a value yet.
