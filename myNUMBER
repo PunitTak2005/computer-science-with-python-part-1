@@ -1,0 +1,3 @@
+myNUMBER=10
+print(myNUMBER+1)
+print(myNUMBER)
