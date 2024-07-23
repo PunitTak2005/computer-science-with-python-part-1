@@ -1,0 +1,31 @@
+write code to obtain fee amount and then calculate fee hike as 10 percent  of fees ie fees x 0.10
+
+# Get the current fee amount
+current_fee = float(input("Enter the current fee amount: "))
+
+# Calculate the fee hike (10% of current fee)
+fee_hike = current_fee * 0.10
+
+# Calculate the new fee amount (current fee + fee hike)
+new_fee = current_fee + fee_hike
+
+# Print the results
+print(f"Current Fee: {current_fee}")
+print(f"Fee Hike (10%): {fee_hike}")
+print(f"New Fee: {new_fee}")
+
+
+This code:
+
+1. Asks the user to enter the current fee amount.
+2. Calculates the fee hike by multiplying the current fee by 0.10 (10%).
+3. Calculates the new fee amount by adding the fee hike to the current fee.
+4. Prints the current fee, fee hike, and new fee amounts.
+
+Example output:
+
+
+Enter the current fee amount: 1000
+Current Fee: 1000.0
+Fee Hike (10%): 100.0
+New Fee: 1100.0
