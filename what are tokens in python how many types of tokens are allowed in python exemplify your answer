@@ -1,0 +1,37 @@
+In Python, tokens are the basic building blocks of the language. They are the smallest units of code that have meaning to the Python interpreter. There are several types of tokens in Python, which can be categorized into the following:
+
+1. Keywords (33): These are reserved words that have special meaning in Python.
+    - Examples: if, for, while, def, class, etc.
+2. Identifiers: These are names given to variables, functions, classes, etc.
+    - Examples: x, my_variable, hello_world, etc.
+3. Literals: These are values that are written directly in the code.
+    - Examples: 123, 3.14, "hello", True, etc.
+4. Operators: These are symbols used for operations like arithmetic, comparison, assignment, etc.
+    - Examples: +, -, *, /, ==, !=, =, etc.
+5. Punctuation: These are symbols used to group code, separate elements, etc.
+    - Examples: (, ), [, ], {, }, ,, ;, etc.
+
+Here's an example code snippet that demonstrates these token types:
+
+
+# Keywords
+if True:
+    # Identifiers
+    x = 5
+    y = 3.14
+    # Literals
+    print("Hello, World!")
+    # Operators
+    result = x + y
+    # Punctuation
+    numbers = [1, 2, 3]
+    print(result)
+
+
+In this example:
+
+- if, True, print are keywords.
+- x, y, numbers are identifiers.
+- 5, 3.14, "Hello, World!" are literals.
+- +, = are operators.
+- (, ), [, ], {, }, , are punctuation tokens.
