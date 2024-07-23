@@ -1,0 +1,19 @@
+The issue with the statement Number = input("Number") is that the input() function in Python returns a string, but the variable name Number suggests that it should be storing a numeric value.
+
+In Python, if you want to get a number as input from the user, you should convert the input string to an integer or float using the int() or float() functions, respectively.
+
+Here's the corrected statement:
+
+Number = int(input("Number"))
+
+Or, if you're expecting a decimal number:
+
+Number = float(input("Number"))
+
+Without the conversion, Number would be a string, and any arithmetic operations or comparisons with numbers would raise a TypeError.
+
+For example, if you try to do Number + 5, you'll get:
+
+TypeError: can only concatenate str (not "int") to str
+
+By converting the input to an integer or float, you ensure that Number is a numeric value and can be used in mathematical operations.
