@@ -1,0 +1,18 @@
+In Python, literals are values that are written directly in the code, such as numbers, strings, booleans, and more. They are called "literals" because they are literal values, not variables or expressions.
+
+Python has the following types of literals:
+
+1. Integer literals: Whole numbers, like 123, 456, etc.
+2. Floating-point literals: Decimal numbers, like 3.14, -0.5, etc.
+3. String literals: Text enclosed in quotes, like "hello", 'hello', etc.
+4. Boolean literals: True or False values, like True, False.
+5. Complex literals: Numbers with real and imaginary parts, like 3+4j, 2-3j, etc.
+6. Bytes literals: Sequence of integers in the range 0 <= x < 256, like b'hello', b'\x01\x02', etc.
+7. Bytearray literals: Mutable sequence of integers in the range 0 <= x < 256, like bytearray(b'hello'), etc.
+8. List literals: Ordered collections of values, like [1, 2, 3], ["a", "b", "c"], etc.
+9. Tuple literals: Ordered, immutable collections of values, like (1, 2, 3), ("a", "b", "c"), etc.
+10. Dictionary literals: Unordered collections of key-value pairs, like {"a": 1, "b": 2}, etc.
+11. Set literals: Unordered collections of unique values, like {1, 2, 3}, etc.
+12. Ellipsis literal: A single value, like ....
+
+These literals can be used directly in your code to represent values, and they can be assigned to variables, passed as function arguments, and more.
