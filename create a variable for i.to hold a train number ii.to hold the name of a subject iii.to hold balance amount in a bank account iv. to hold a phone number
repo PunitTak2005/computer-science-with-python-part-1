@@ -1,0 +1,18 @@
+create a variable for i.to hold a train number ii.to hold the name of a subject iii.to hold balance amount in a bank account iv. to hold a phone number
+
+train_number = 1234
+subject_name = "Mathematics"
+account_balance = 1000.50
+phone_number = "+1-234-567-8900"
+
+print(train_number)
+print(subject_name)
+print(account_balance)
+print(phone_number)
+
+This will output:
+
+1234
+Mathematics
+1000.5
++1-234-567-8900
