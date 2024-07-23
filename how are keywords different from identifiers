@@ -1,0 +1,26 @@
+Keywords and identifiers are both tokens in Python, but they serve different purposes and have distinct characteristics:
+
+Keywords:
+
+1. Reserved words: Keywords are predefined, reserved words in Python that have special meanings.
+2. Cannot be used as identifiers: Keywords cannot be used as variable names, function names, or any other identifier.
+3. Fixed meaning: Keywords have a fixed meaning and cannot be redefined.
+4. Syntax: Keywords are used to define the syntax of the language, such as control structures (if, for, while), functions (def), classes (class), etc.
+
+Examples of keywords: if, for, while, def, class, import, etc.
+
+Identifiers:
+
+1. User-defined names: Identifiers are names given to variables, functions, classes, modules, etc.
+2. Can be used as variables: Identifiers can be used to store values, define functions, classes, etc.
+3. Meaning defined by user: Identifiers have meanings defined by the user, and their meanings can change during program execution.
+4. Syntax: Identifiers are used to reference variables, functions, classes, etc., in the code.
+
+Examples of identifiers: x, my_variable, hello_world, my_function, etc.
+
+To illustrate the difference:
+
+- if is a keyword and cannot be used as a variable name.
+- my_if is an identifier and can be used as a variable name.
+
+Remember, keywords have fixed meanings and are used to define the language's syntax, while identifiers have user-defined meanings and are used to reference variables, functions, classes, etc.
