@@ -1,0 +1,19 @@
+The correct answer is: decimal
+
+In Python, int and float are built-in numeric types, but decimal is not a built-in numeric type. However, Python provides a decimal module that allows you to work with decimal numbers.
+
+Here are some examples:
+
+Legal numeric types:
+
+- x = 10 (int)
+- y = 10.5 (float)
+
+Not legal numeric type:
+
+- z = 10.5D (decimal, not a built-in type, but can use decimal.Decimal('10.5'))
+
+Note that you can import the decimal module and use its Decimal class to work with decimal numbers:
+
+from decimal import Decimal
+z = Decimal('10.5')
