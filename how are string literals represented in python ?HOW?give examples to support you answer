@@ -1,0 +1,45 @@
+In Python, string literals are represented by enclosing a sequence of characters in:
+
+1. Single quotes (')
+2. Double quotes (")
+3. Triple quotes (''' or """)
+
+Here are some examples:
+
+1. Single quotes:
+
+my_string = 'Hello, World!'
+
+1. Double quotes:
+
+my_string = "Hello, World!"
+
+1. Triple quotes (used for multiline strings):
+
+my_string = """This is a
+multiline string"""
+
+or
+
+my_string = '''This is a
+multiline string'''
+
+In Python, you can also use raw strings by prefixing the literal with r:
+
+my_string = r'C:\Windows\System32'
+
+This is useful when working with file paths or regular expressions.
+
+Additionally, Python supports Unicode strings by prefixing the literal with u:
+
+my_string = u'Hello, World!'
+
+However, in Python 3.x, all strings are Unicode by default, so the u prefix is not necessary.
+
+You can also use f-strings (formatted string literals) in Python 3.6+:
+
+name = 'John'
+age = 30
+my_string = f'My name is {name} and I am {age} years old.'
+
+These are just a few examples of how string literals are represented in Python.
