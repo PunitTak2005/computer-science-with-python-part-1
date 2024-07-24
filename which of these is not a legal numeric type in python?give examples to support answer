@@ -1,0 +1,28 @@
+The following are legal numeric types in Python:
+
+1. Integers (int): 1, 2, 3, etc.
+2. Floating-point numbers (float): 1.0, 2.5, 3.14, etc.
+3. Complex numbers (complex): 1+2j, 2-3j, 4+5j, etc.
+
+The following is NOT a legal numeric type in Python:
+
+1. Fraction (fractions are not a built-in numeric type, but a module called fractions is available)
+
+However, if you're looking for something that is not a legal numeric type in Python, I'd say:
+
+1. Decimal (decimals are not a built-in numeric type, but a module called decimal is available)
+
+Here are some examples to support my answer:
+
+Legal numeric types:
+
+- x = 10 (integer)
+- y = 10.5 (floating-point number)
+- z = 2+3j (complex number)
+
+Not legal numeric types:
+
+- x = 1/2 (fraction, not a built-in type, but can use fractions.Fraction(1, 2))
+- y = 10.5D (decimal, not a built-in type, but can use decimal.Decimal('10.5'))
+
+Note that while fractions and decimals are not built-in numeric types, Python provides modules to work with them.
