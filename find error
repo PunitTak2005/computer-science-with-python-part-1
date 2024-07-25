@@ -1,0 +1,36 @@
+i. i.temperature=90; print temperature
+
+- Error: i is not defined as an object or dictionary, so you can't assign a value to i.temperature.
+- Error: print temperature should be print(i.temperature) (assuming i is defined correctly).
+
+ii. a=30; b=a+b; print(a And b)
+
+- Error: b=a+b will raise a NameError because b is not defined before being used.
+- Error: print(a And b) should be print(a and b) (lowercase and). And is not a valid keyword.
+- Note: Even with corrections, a and b will perform a logical AND operation, not print both values. Use print(a, b) instead.
+
+iii. a,b,c=2,8,9; print(a,b,c); c,b,a=a,b,c; print(a;b;c)
+
+- Error: print(a;b;c) should be print(a, b, c) (use commas to separate values, not semicolons).
+
+iv. x=24; 4=x
+
+- Error: This is attempting to assign the value of x to the literal number 4, which is not allowed. You can't assign a value to a literal number.
+
+v. print("x="x)
+
+- Error: This should be print("x=", x) (add a comma to separate the string from the variable).
+
+vi. else=21-5
+
+- Error: else is a reserved keyword in Python and can't be used as a variable name.
+
+Corrected code:
+
+iii. a, b, c = 2, 8, 9; print(a, b, c); c, b, a = a, b, c; print(a, b, c)
+
+iv. x = 24; x = 4 (or simply x = 4)
+
+v. print("x=", x)
+
+vi. result = 21 - 5 (use a different variable name instead of else)
