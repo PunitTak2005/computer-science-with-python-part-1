@@ -1,0 +1,13 @@
+The error in the code x, y = 7 is that the number of values on the right side of the assignment (1 value: 7) does not match the number of variables on the left side (2 variables: x and y).
+
+In Python, when using tuple unpacking (as in this case), the number of values on the right side must match the number of variables on the left side.
+
+To fix the error, you can:
+
+1. Provide two values on the right side: x, y = 7, 3
+2. Use a single variable on the left side: x = 7
+3. Use a tuple or list on the right side with two values: x, y = (7, 3) or x, y = [7, 3]
+
+The error message you would see is:
+
+ValueError: not enough values to unpack (expected 2, got 1)
