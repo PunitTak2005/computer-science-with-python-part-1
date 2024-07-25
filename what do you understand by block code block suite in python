@@ -1,0 +1,40 @@
+In Python, a:
+
+- Code Block: A group of statements that are executed together as a single unit. Code blocks are defined by their indentation (four spaces or a tab).
+- Suite: A sequence of statements that are executed in order. A suite can be a single statement or a code block.
+
+In other words, a suite is a collection of statements, and a code block is a specific type of suite that is defined by its indentation.
+
+Here's an example:
+
+if x > 5:
+    # This is a code block (suite) with two statements
+    print("x is greater than 5")
+    y = x * 2
+
+In this example:
+
+- The if statement is a single statement.
+- The indented code block (with two statements) is a suite.
+- The entire if statement, including the code block, is a code block (suite).
+
+Python uses indentation to define the structure of the code, so it's essential to use consistent indentation to define code blocks and suites correctly.
+
+Here are some more examples of code blocks and suites:
+
+- A single statement is a simple suite:
+
+x = 5
+
+- A loop is a code block (suite) with multiple statements:
+
+for i in range(5):
+    print(i)
+    y = i * 2
+
+- A function definition is a code block (suite) with multiple statements:
+
+def my_function():
+    x = 5
+    y = x * 2
+    return y
