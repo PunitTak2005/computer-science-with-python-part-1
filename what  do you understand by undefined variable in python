@@ -1,0 +1,37 @@
+In Python, an undefined variable is a variable that:
+
+1. Has not been assigned a value
+2. Has not been declared
+3. Is referenced before assignment
+
+When a Python program tries to use an undefined variable, it raises a:
+
+NameError: name 'variable_name' is not defined
+
+This error indicates that the variable does not exist in the current scope or has not been assigned a value.
+
+Examples of undefined variables:
+
+1. Using a variable before assigning a value:
+
+print(x)  # Raises NameError: name 'x' is not defined
+x = 5
+
+1. Typo in variable name:
+
+x = 5
+print(y)  # Raises NameError: name 'y' is not defined
+
+1. Variable not declared in the current scope:
+
+def foo():
+    x = 5
+print(x)  # Raises NameError: name 'x' is not defined
+
+To avoid undefined variable errors:
+
+1. Assign values to variables before using them
+2. Check spelling and capitalization of variable names
+3. Ensure variables are declared in the correct scope
+
+By understanding undefined variables, you can write more robust and error-free Python code.
