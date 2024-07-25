@@ -1,0 +1,28 @@
+The code x = y = 7 is an example of a chained assignment in Python.
+
+Here's what it does:
+
+1. Assigns the value 7 to y.
+2. Assigns the value of y (which is now 7) to x.
+
+So, after executing this code, both x and y will have the value 7.
+
+In other words, it's equivalent to writing:
+
+y = 7
+x = y
+
+Or:
+
+x = 7
+y = 7
+
+This syntax is often used to initialize multiple variables to the same value in a concise way.
+
+For example:
+
+a = b = c = 0  # Initializes a, b, and c to 0
+
+Note that this syntax can also be used for more complex expressions:
+
+x = y = 2 * 3 + 1  # Assigns 7 to both x and y
