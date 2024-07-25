@@ -1,0 +1,18 @@
+following variable definition is creating problem x=0281,find reasons
+
+The variable definition x = 0281 is creating a problem because:
+
+1. Leading zero: The number 0281 has a leading zero, which is not allowed in Python's decimal integer syntax.
+2. Octal interpretation: Python interprets numbers starting with 0 as octal (base 8) numbers, not decimal (base 10) numbers.
+
+To fix the issue, you can:
+
+1. Remove the leading zero: x = 281
+2. Use a string to represent the number: x = '0281'
+3. Use a different number system (e.g., hexadecimal): x = 0x281 (this would assign the decimal value 641 to x)
+
+If you try to run the code with the leading zero, you'll get a:
+
+SyntaxError: leading zeros in decimal integer literals are not permitted
+
+error message.
