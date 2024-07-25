@@ -1,0 +1,24 @@
+which argument of print would you set for changing the default separator (space) ii printing the following line in current line
+To change the default separator (space) when printing, you can use the sep argument in the print function.
+
+For example, if you want to print the following line with a comma as the separator:
+
+print('Hello', 'World', 'This', 'is', 'a', 'test')
+
+You can use the sep argument like this:
+
+print('Hello', 'World', 'This', 'is', 'a', 'test', sep=', ')
+
+This will output:
+
+Hello, World, This, is, a, test
+
+If you want to print on the same line, you can use the end argument:
+
+print('Hello', 'World', 'This', 'is', 'a', 'test', sep=', ', end='')
+
+This will output:
+
+Hello, World, This, is, a, test
+
+Note that the end argument defaults to \n (newline), so setting it to an empty string ('') will prevent it from printing a newline at the end.
