@@ -1,0 +1,16 @@
+In Python, indentation plays a crucial role in defining the structure of the code. It is used to:
+
+1. Denote block-level structure: Indentation indicates a block of code within a control structure (if/else, for/while loops, functions, classes, etc.).
+2. Define code blocks: Indentation defines a code block, which is a group of statements that are executed together as a single unit.
+3. Show nesting: Indentation shows the nesting of code blocks within each other.
+4. Separate code blocks: Indentation separates code blocks from each other, making the code more readable.
+5. Determine scope: Indentation determines the scope of variables, functions, and classes.
+
+Here are some key aspects of indentation in Python:
+
+- Four spaces or one tab: Python uses four spaces or one tab for indentation.
+- Consistency: Consistent indentation is crucial; mixing spaces and tabs can lead to errors.
+- IndentationError: Python raises an IndentationError if the indentation is incorrect.
+- Auto-indentation: Many text editors and IDEs provide auto-indentation features to help maintain consistent indentation.
+
+By using indentation, Python enforces a clear and readable code structure, making it easier to write and maintain code.
