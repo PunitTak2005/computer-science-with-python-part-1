@@ -1,0 +1,30 @@
+In Python, operators are special symbols that perform operations on variables and values. They are used to manipulate data, make decisions, and control the flow of a program.
+
+Unary Operators
+
+Unary operators operate on a single operand. They are used to perform operations such as negation, increment, or decrement.
+
+Examples of unary operators:
+
+- + (positive): +5 returns 5
+- - (negative): -5 returns -5
+- ~ (bitwise NOT): ~5 returns -6 (inverts all bits)
+- not (logical NOT): not True returns False
+
+Binary Operators
+
+Binary operators operate on two operands. They are used to perform operations such as addition, subtraction, multiplication, and division.
+
+Examples of binary operators:
+
+- + (addition): 2 + 3 returns 5
+- - (subtraction): 2 - 3 returns -1
+- * (multiplication): 2 * 3 returns 6
+- / (division): 2 / 3 returns 0.6666666666666666
+- ** (exponentiation): 2 ** 3 returns 8
+- == (equality): 2 == 3 returns False
+- != (inequality): 2 != 3 returns True
+- > (greater than): 2 > 3 returns False
+- < (less than): 2 < 3 returns True
+
+Note that some operators, such as + and -, can be used as both unary and binary operators, depending on the context.
