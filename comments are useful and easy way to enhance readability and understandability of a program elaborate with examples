@@ -1,0 +1,58 @@
+Comments are annotations in the code that explain what the code does, making it easier for others (and yourself) to understand. Here's how comments enhance readability and understandability:
+
+1. Explain complex logic: Comments help clarify complex code blocks, making it easier to grasp the intended functionality.
+
+Example:
+
+# Calculate the factorial of a number using recursion
+def factorial(n):
+    # Base case: 1! = 1
+    if n == 1:
+        return 1
+    # Recursive case: n! = n * (n-1)!
+    else:
+        return n * factorial(n-1)
+
+1. Describe variables and data structures: Comments provide context for variable names, data types, and data structures.
+
+Example:
+
+# User information dictionary with name, age, and occupation
+user_data = {
+    # String: full name
+    'name': 'John Doe',
+    # Integer: age in years
+    'age': 30,
+    # String: occupation
+    'occupation': 'Software Engineer'
+}
+
+1. Highlight important sections: Comments draw attention to critical parts of the code, such as error handling or optimization.
+
+Example:
+
+try:
+    # Attempt to open the file
+    with open('example.txt', 'r') as file:
+        # Read the file contents
+        contents = file.read()
+except FileNotFoundError:
+    # Handle the error: file not found
+    print("Error: File not found.")
+
+1. Provide authorship and version information: Comments can include metadata about the code, such as author, date, and version.
+
+Example:
+
+# Author: John Doe
+# Date: 2022-01-01
+# Version: 1.0
+
+1. Explain workarounds or hacks: Comments can clarify why a particular solution was chosen, especially if it's unconventional.
+
+Example:
+
+# Using a workaround to fix a browser compatibility issue
+# See: (link unavailable)
+
+By using comments effectively, you can make your code more readable, understandable, and maintainable, saving time and effort for yourself and others.
