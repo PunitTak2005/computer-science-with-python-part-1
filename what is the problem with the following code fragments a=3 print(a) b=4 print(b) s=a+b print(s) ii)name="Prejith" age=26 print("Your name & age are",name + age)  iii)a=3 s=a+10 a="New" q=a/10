@@ -1,0 +1,65 @@
+what is the problem with the following code fragments
+a=3
+print(a)
+b=4
+print(b)
+s=a+b
+print(s)
+ii)name="Prejith"
+age=26
+print("Your name & age are",name + age)
+
+iii)a=3
+s=a+10
+a="New"
+q=a/10
+
+Here are the problems with each code fragment in Python:
+
+i)
+
+- No issues, this code will run correctly in Python.
+
+ii)
+
+- The + operator cannot be used to concatenate a string with an integer. You need to convert the integer to a string using str() or use string formatting.
+
+Corrected version:
+
+
+name = "Prejith"
+age = 26
+print("Your name & age are", name, age)
+
+
+Or, using string formatting:
+
+
+print(f"Your name & age are {name} {age}")
+
+
+iii)
+
+- Assigning a string value to a variable that previously held an integer value is allowed in Python, but it's generally discouraged.
+- Trying to divide a string by an integer will raise a TypeError.
+
+Corrected version:
+
+
+a = 3
+s = a + 10
+print(s)
+a = "New"  # This will work, but it's generally discouraged to reuse variables like this
+q = "Cannot divide a string by an integer!"
+print(q)
+
+
+Or, if you want to perform division:
+
+
+a = 3
+s = a + 10
+print(s)
+a = 10  # Assign a new integer value
+q = a / 10
+print(q)
