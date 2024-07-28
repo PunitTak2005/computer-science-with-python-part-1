@@ -1,0 +1,24 @@
+write a program that displays a joke .but display the punchline only when user presses enter key(hint you may use input())
+
+
+Here is a simple Python program that displays a joke and waits for the user to press Enter before showing the punchline:
+
+
+# Display the joke
+print("Why couldn't the bicycle stand up by itself?")
+
+# Wait for the user to press Enter
+input("Press Enter to see the punchline...")
+
+# Display the punchline
+print("Because it was two-tired!")
+
+
+Here's how it works:
+
+1. The first print statement displays the joke.
+2. The input function is used to wait for the user to press Enter. The prompt "Press Enter to see the punchline..." is displayed.
+3. Once the user presses Enter, the program continues to the next line.
+4. The final print statement displays the punchline.
+
+Run this program and enjoy the joke!
