@@ -1,0 +1,27 @@
+The error in the code is:
+
+1. print("Last year you were in class")c-1:
+
+    - This line is trying to subtract 1 from the string c, which will raise a TypeError. You can't perform arithmetic operations on strings.
+    - Also, the print statement is not closed, and the syntax is incorrect.
+
+Corrected version:
+
+
+c = input("Enter your current class: ")
+last_year_class = int(c) - 1
+print("Last year you were in class", last_year_class)
+
+
+Or, if you want to handle cases where the user enters a non-numeric class name (like "XI", "XII", etc.):
+
+
+c = input("Enter your current class: ")
+if c.isdigit():
+    last_year_class = int(c) - 1
+    print("Last year you were in class", last_year_class)
+else:
+    print("Invalid class. Please enter a numeric class.")
+
+
+Note: In the corrected versions, I assumed that the class is represented by a numeric value. If the class is represented by a string (like "XI", "XII", etc.), you'll need to handle the conversion differently.
