@@ -1,0 +1,40 @@
+write a program to read today's date (only del part) from user.Then display how many days are left in the current month
+
+Here is a Python program that reads today's date (day part) from the user and displays how many days are left in the current month:
+
+
+from datetime import datetime
+
+# Get today's date from the user
+day = int(input("Enter today's day: "))
+
+# Get the current month and year
+now = datetime.now()
+month = now.month
+year = now.year
+
+# Get the total number of days in the current month
+if month in [1, 3, 5, 7, 8, 10, 12]:
+    total_days = 31
+elif month == 2:
+    if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0:
+        total_days = 29
+    else:
+        total_days = 28
+else:
+    total_days = 30
+
+# Calculate the number of days left in the month
+days_left = total_days - day
+
+# Display the result
+print(f"There are {days_left} days left in the current month.")
+
+
+Here's how it works:
+
+1. The user is prompted to enter today's day.
+2. The current month and year are obtained using the datetime module.
+3. The total number of days in the current month is determined based on the month and year.
+4. The number of days left in the month is calculated by subtracting the user-input day from the total number of days.
+5. The result is displayed to the user.
