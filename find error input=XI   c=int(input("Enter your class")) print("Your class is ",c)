@@ -1,0 +1,27 @@
+The error in the code is:
+
+1. input=XI:
+
+    - This line is assigning the value XI to the built-in input function, which is not allowed. input is a function, and you can't assign a value to it.
+    - If you meant to assign the value XI to a variable, you should use a different variable name, like grade or class_name.
+2. c=int(input("Enter your class")):
+
+    - This line is trying to convert the user's input to an integer using int(). However, if the user enters a string (like "XI"), this will raise a ValueError.
+    - You should use str instead of int to allow the user to enter a string.
+
+Corrected version:
+
+
+class_name = input("Enter your class: ")
+print("Your class is", class_name)
+
+
+Or, if you want to ensure the user enters a valid class name (like "XI", "XII", etc.):
+
+
+valid_classes = ["XI", "XII", "XIII", etc.]
+class_name = input("Enter your class: ")
+if class_name in valid_classes:
+    print("Your class is", class_name)
+else:
+    print("Invalid class. Please try again.")
