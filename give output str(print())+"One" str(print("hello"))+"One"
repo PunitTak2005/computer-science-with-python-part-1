@@ -1,0 +1,18 @@
+Here are the outputs:
+
+1. str(print()) + "One"
+    - print() returns None, so str(print()) becomes "None"
+    - Adding "One" to that results in: "NoneOne"
+
+2. str(print("hello")) + "One"
+    - print("hello") prints "hello" to the console and returns None
+    - str(print("hello")) becomes "None" again
+    - Adding "One" to that results in: "NoneOne"
+
+So, the outputs are:
+
+NoneOne
+hello
+NoneOne
+
+Note that the first and third lines are the results of the expressions, while the second line is the output of the print("hello") statement itself.
