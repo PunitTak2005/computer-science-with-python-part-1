@@ -1,0 +1,24 @@
+Here is the modified Python program that prints the output as 5@10@9:
+
+
+# Assign value 5 to a variable
+a = 5
+
+# Multiply a by 2 to generate 10
+b = a * 2
+
+# Subtract 1 to generate 9
+c = b - 1
+
+# Print the output separated by '@'
+print(f"{a}@{b}@{c}")  # Output: 5@10@9
+
+
+Alternatively, you can also write the program in a single line using tuple unpacking:
+
+
+a, b, c = 5, 5*2, 5*2-1
+print(f"{a}@{b}@{c}")  # Output: 5@10@9
+
+
+In both programs, the f-string formatting is used to print the values of a, b, and c separated by the @ character.
