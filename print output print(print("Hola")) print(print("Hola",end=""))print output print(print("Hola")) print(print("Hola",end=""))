@@ -1,0 +1,19 @@
+Here are the outputs:
+
+1. print(print("Hola"))
+    - print("Hola") prints "Hola" to the console and returns None
+    - print(None) prints None to the console
+    - Output:
+
+Hola
+None
+
+
+1. print(print("Hola",end=""))
+    - print("Hola",end="") prints "Hola" to the console without a newline (due to end="") and returns None
+    - print(None) prints None to the console
+    - Output:
+
+HolaNone
+
+Note that the second output has no newline between "Hola" and None because of the end="" argument in the inner print function.
