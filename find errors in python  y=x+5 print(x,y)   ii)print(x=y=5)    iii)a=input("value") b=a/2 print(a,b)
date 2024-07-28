@@ -1,0 +1,47 @@
+Here are the errors in each Python code fragment:
+
+i)
+
+- The variable x is not defined before it's used in the expression y=x+5. This will raise a NameError.
+
+Corrected version:
+
+
+x = 5
+y = x + 5
+print(x, y)
+
+
+ii)
+
+- The syntax print(x=y=5) is incorrect. You can't assign a value to x and y inside the print() function like this. This will raise a SyntaxError.
+
+Corrected version:
+
+
+x = y = 5
+print(x, y)
+
+
+iii)
+
+- The input() function returns a string, so a will be a string. Then, trying to divide a by an integer (2) will raise a TypeError.
+
+Corrected version:
+
+
+a = int(input("Value: "))  # Convert input to integer
+b = a / 2
+print(a, b)
+
+
+Or, if you want to handle non-integer inputs:
+
+
+a = input("Value: ")
+try:
+    a = int(a)
+    b = a / 2
+    print(a, b)
+except ValueError:
+    print("Invalid input. Please enter an integer.")
