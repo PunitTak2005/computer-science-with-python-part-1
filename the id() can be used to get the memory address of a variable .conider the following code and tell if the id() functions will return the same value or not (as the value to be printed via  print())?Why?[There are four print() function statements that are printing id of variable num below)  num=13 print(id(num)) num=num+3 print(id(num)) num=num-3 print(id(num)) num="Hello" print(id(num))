@@ -1,0 +1,23 @@
+The id() function returns the memory address of an object. In Python, integers are immutable, which means their value cannot be changed after creation. When you do num = num + 3, a new integer object is created with the value 16, and num is assigned to reference this new object.
+
+Here's what happens in your code:
+
+1. num = 13: An integer object with value 13 is created, and num references it.
+2. print(id(num)): Prints the memory address of the integer object 13.
+3. num = num + 3: A new integer object with value 16 is created, and num references it.
+4. print(id(num)): Prints the memory address of the integer object 16, which is different from the address of 13.
+5. num = num - 3: A new integer object with value 13 is created, and num references it. Note that this is a new object, not the same as the original 13 object.
+6. print(id(num)): Prints the memory address of the new integer object 13, which is different from the address of the original 13 object.
+7. num = "Hello": A string object with value "Hello" is created, and num references it.
+8. print(id(num)): Prints the memory address of the string object "Hello", which is different from the addresses of the integer objects.
+
+So, the id() function will return different values for each print() statement because each assignment creates a new object, even if the value is the same.
+
+Here's a sample output:
+
+140299848970496
+140299848970528
+140299848970496
+140299851041672
+
+Note that the actual memory addresses will vary between runs and systems.
