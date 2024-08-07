@@ -1,0 +1,20 @@
+Numeric types in Python are data types that represent numbers and allow mathematical operations. Python provides three core numeric types:
+
+1. **`int` (Integer)**
+   - Represents whole numbers without a fractional part.
+   - Example values: `5`, `-42`, `0`.
+
+2. **`float` (Floating-point)**
+   - Represents numbers with a fractional part, using a decimal point.
+   - Example values: `3.14`, `-0.001`, `2.0`.
+
+3. **`complex` (Complex number)**
+   - Represents numbers with a real and an imaginary part. The imaginary part is denoted by a suffix `j` or `J`.
+   - Example values: `1 + 2j`, `-3 - 4j`.
+
+### Summary of Numeric Types:
+- **`int`**: For whole numbers.
+- **`float`**: For numbers with decimal points.
+- **`complex`**: For numbers with both real and imaginary parts.
+
+These numeric types allow Python to handle a wide range of mathematical and numerical operations, from basic arithmetic to complex calculations involving imaginary numbers.
