@@ -1,0 +1,39 @@
+**Boolean Numbers** are a data type that represents logical values. In Python, the Boolean type has two possible values:
+
+- **`True`**: Represents a truth value indicating that a condition or statement is true.
+- **`False`**: Represents a truth value indicating that a condition or statement is false.
+
+### Boolean as a Type of Integer
+
+In Python, Boolean values are considered a subtype of integers because:
+
+1. **Underlying Representation**:
+   - Internally, Boolean values are stored as integers: `True` is equivalent to `1`, and `False` is equivalent to `0`. This design allows Boolean values to seamlessly participate in arithmetic operations and expressions.
+
+2. **Arithmetic Operations**:
+   - Since `True` is `1` and `False` is `0`, you can use Boolean values in arithmetic operations. For example:
+     ```python
+     a = True + 2  # a will be 3
+     b = False * 10  # b will be 0
+     ```
+
+3. **Type Consistency**:
+   - Boolean values can be used interchangeably with integers in many contexts, which simplifies code and ensures type consistency in operations that involve Boolean logic.
+
+### Example
+
+```python
+x = True
+y = False
+
+print(type(x))  # <class 'bool'>
+print(type(y))  # <class 'bool'>
+
+print(int(x))   # 1
+print(int(y))   # 0
+
+print(x + 5)    # 6 (because True is treated as 1)
+print(y * 10)   # 0 (because False is treated as 0)
+```
+
+In summary, Boolean values in Python are a type of integer because they are internally represented as integers, which allows for consistent behavior and interoperability with other numeric operations.
