@@ -1,0 +1,23 @@
+def read_student_details():
+    name = input("Enter the student's name: ")
+    student_class = input("Enter the student's class: ")
+    age = input("Enter the student's age: ")
+    return name, student_class, age
+
+def print_details_same_line(name, student_class, age):
+    print(f"Name: {name}, Class: {student_class}, Age: {age}")
+
+def print_details_separate_lines(name, student_class, age):
+    print(f"Name: {name}\nClass: {student_class}\nAge: {age}")
+
+def main():
+    name, student_class, age = read_student_details()
+    
+    print("\n\n")
+    print_details_same_line(name, student_class, age)
+    
+    print("\n\n")
+    print_details_separate_lines(name, student_class, age)
+
+if __name__ == "__main__":
+    main()
