@@ -1,0 +1,20 @@
+Given the variables `A` and `b` with the following values:
+
+```python
+A = 21778367
+b = A + 1
+```
+
+Here's the breakdown of their data types:
+
+1. **`A`**:
+   - `A` is assigned the value `21778367`, which is an integer.
+   - Therefore, the data type of `A` is `int`.
+
+2. **`b`**:
+   - `b` is assigned the value of `A + 1`. Since `A` is an integer, adding `1` to `A` will also result in an integer.
+   - Therefore, the data type of `b` will also be `int`.
+
+In summary:
+- **Data type of `A`**: `int`
+- **Data type of `b`**: `int`
