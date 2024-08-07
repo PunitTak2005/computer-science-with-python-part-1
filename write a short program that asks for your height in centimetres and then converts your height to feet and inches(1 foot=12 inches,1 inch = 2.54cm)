@@ -1,0 +1,19 @@
+def convert_height(cm):
+    inches = cm / 2.54
+    feet = int(inches // 12)
+    remaining_inches = inches % 12
+    return feet, remaining_inches
+
+def main():
+    try:
+        height_cm = float(input("Enter your height in centimeters: "))
+        if height_cm < 0:
+            print("Height cannot be negative. Please enter a positive value.")
+        else:
+            feet, inches = convert_height(height_cm)
+            print(f"Your height is {feet} feet and {inches:.2f} inches.")
+    except ValueError:
+        print("Invalid input. Please enter a numeric value.")
+
+if __name__ == "__main__":
+    main()
