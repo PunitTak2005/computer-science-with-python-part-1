@@ -1,0 +1,26 @@
+def swap_with_sums(a, b, c):
+    # Calculate new values for a and b
+    a_new = a + b
+    b_new = b + c
+    
+    # Swap a and b with their new values
+    return a_new, b_new, c
+
+def main():
+    try:
+        a = float(input("Enter the first number: "))
+        b = float(input("Enter the second number: "))
+        c = float(input("Enter the third number: "))
+        
+        print(f"Original values: a = {a}, b = {b}, c = {c}")
+        
+        a, b, c = swap_with_sums(a, b, c)
+        
+        print(f"New values: a = {a}, b = {b}, c = {c}")
+    
+    except ValueError:
+        print("Invalid input. Please enter numeric values.")
+
+if __name__ == "__main__":
+    main()
+
