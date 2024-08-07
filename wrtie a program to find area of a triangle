@@ -1,0 +1,19 @@
+def calculate_area_base_height(base, height):
+    area = 0.5 * base * height
+    return area
+
+def main_base_height():
+    try:
+        base = float(input("Enter the base of the triangle: "))
+        height = float(input("Enter the height of the triangle: "))
+        
+        if base > 0 and height > 0:
+            area = calculate_area_base_height(base, height)
+            print(f"The area of the triangle is: {area:.2f}")
+        else:
+            print("Base and height must be positive values.")
+    except ValueError:
+        print("Invalid input. Please enter numeric values.")
+
+if __name__ == "__main__":
+    main_base_height()
