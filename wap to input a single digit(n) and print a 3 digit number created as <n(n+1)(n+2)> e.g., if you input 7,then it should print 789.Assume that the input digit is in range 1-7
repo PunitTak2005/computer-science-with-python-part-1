@@ -1,0 +1,18 @@
+def create_three_digit_number(n):
+    return f"{n}{n+1}{n+2}"
+
+def main():
+    try:
+        n = int(input("Enter a single digit (1-7): "))
+        
+        if 1 <= n <= 7:
+            three_digit_number = create_three_digit_number(n)
+            print(f"The three-digit number formed is: {three_digit_number}")
+        else:
+            print("The input must be a single digit in the range 1-7.")
+    
+    except ValueError:
+        print("Invalid input. Please enter a single digit numeric value.")
+
+if __name__ == "__main__":
+    main()
