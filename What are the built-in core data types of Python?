@@ -1,0 +1,28 @@
+Python has several built-in core data types that are fundamental to programming in the language. Here are the primary ones:
+
+1. **Numeric Types**
+   - **`int`**: Integer type, e.g., `5`, `-42`, `0`.
+   - **`float`**: Floating-point number type, e.g., `3.14`, `-0.001`, `2.0`.
+   - **`complex`**: Complex number type, e.g., `1 + 2j`, `-3 - 4j`.
+
+2. **Sequence Types**
+   - **`str`**: String type, e.g., `"hello"`, `'world'`, `"""multi-line"""`.
+   - **`list`**: List type, which is mutable and ordered, e.g., `[1, 2, 3]`, `['a', 'b', 'c']`.
+   - **`tuple`**: Tuple type, which is immutable and ordered, e.g., `(1, 2, 3)`, `('x', 'y')`.
+
+3. **Mapping Type**
+   - **`dict`**: Dictionary type, which is mutable and unordered, e.g., `{'key1': 'value1', 'key2': 'value2'}`.
+
+4. **Set Types**
+   - **`set`**: Set type, which is mutable and unordered, e.g., `{1, 2, 3}`, `{'a', 'b'}`.
+   - **`frozenset`**: Immutable set type, e.g., `frozenset([1, 2, 3])`.
+
+5. **Boolean Type**
+   - **`bool`**: Boolean type, with two values: `True` and `False`.
+
+6. **Binary Types**
+   - **`bytes`**: Immutable sequence of bytes, e.g., `b'hello'`.
+   - **`bytearray`**: Mutable sequence of bytes, e.g., `bytearray([1, 2, 3])`.
+   - **`memoryview`**: Memory view object that allows Python code to access the internal data of an object that supports the buffer protocol without copying.
+
+These core data types provide the foundation for most Python programming tasks, allowing you to handle numbers, text, collections of items, mappings, and more.
