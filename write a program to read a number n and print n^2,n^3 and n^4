@@ -1,0 +1,19 @@
+def calculate_powers(n):
+    square = n ** 2
+    cube = n ** 3
+    fourth_power = n ** 4
+    return square, cube, fourth_power
+
+def main():
+    try:
+        n = float(input("Enter a number: "))
+        square, cube, fourth_power = calculate_powers(n)
+        print(f"{n} squared is {square}")
+        print(f"{n} cubed is {cube}")
+        print(f"{n} to the power of 4 is {fourth_power}")
+    except ValueError:
+        print("Invalid input. Please enter a numeric value.")
+
+if __name__ == "__main__":
+    main()
+
