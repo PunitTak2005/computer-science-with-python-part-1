@@ -1,0 +1,28 @@
+def calculate_simple_interest(principal, rate, time):
+    simple_interest = (principal * rate * time) / 100
+    return simple_interest
+
+def calculate_compound_interest(principal, rate, time):
+    compound_amount = principal * (1 + rate / 100) ** time
+    compound_interest = compound_amount - principal
+    return compound_interest
+
+def main():
+    try:
+        principal = float(input("Enter the principal amount: "))
+        rate = float(input("Enter the annual interest rate (in %): "))
+        time = float(input("Enter the time (in years): "))
+        
+        if principal < 0 or rate < 0 or time < 0:
+            print("Principal, rate, and time must be non-negative values.")
+        else:
+            simple_interest = calculate_simple_interest(principal, rate, time)
+            compound_interest = calculate_compound_interest(principal, rate, time)
+            
+            print(f"Simple Interest: {simple_interest:.2f}")
+            print(f"Compound Interest: {compound_interest:.2f}")
+    except ValueError:
+        print("Invalid input. Please enter numeric values.")
+
+if __name__ == "__main__":
+    main()
