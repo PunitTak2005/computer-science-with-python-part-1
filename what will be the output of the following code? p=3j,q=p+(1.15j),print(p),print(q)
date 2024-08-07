@@ -1,0 +1,35 @@
+p = 3j
+q = p + (1.15j)
+print(p)
+print(q)
+
+Let's break down the given code and understand what it does:
+
+```python
+p = 3j
+q = p + (1.15j)
+print(p)
+print(q)
+```
+
+1. **`p = 3j`**:
+   - `p` is assigned the value `3j`, which is a complex number with a real part of `0` and an imaginary part of `3`.
+
+2. **`q = p + (1.15j)`**:
+   - `q` is assigned the result of adding `p` and `1.15j`. 
+   - Since `p` is `3j` and `1.15j` is another complex number with a real part of `0` and an imaginary part of `1.15`, adding them together yields `3j + 1.15j` which simplifies to `(3 + 1.15)j = 4.15j`.
+
+3. **`print(p)`**:
+   - This prints the value of `p`, which is `3j`.
+
+4. **`print(q)`**:
+   - This prints the value of `q`, which is `4.15j`.
+
+### Output
+
+```
+3j
+4.15j
+```
+
+Here, `3j` is the value of `p`, and `4.15j` is the result of the addition operation.
