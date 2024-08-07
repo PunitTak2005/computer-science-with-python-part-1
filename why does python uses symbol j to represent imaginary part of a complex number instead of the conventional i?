@@ -1,0 +1,29 @@
+Python uses the symbol `j` to represent the imaginary part of a complex number rather than the conventional `i` for historical and practical reasons:
+
+### Historical Context
+
+1. **Electrical Engineering Notation**:
+   - In electrical engineering, `j` is commonly used to denote the imaginary unit because `i` is already used to represent electric current. Using `j` helps avoid confusion between these two concepts in technical fields.
+
+2. **Consistency with Standards**:
+   - Python's use of `j` aligns with conventions in engineering and other scientific disciplines where `j` is often used to represent imaginary numbers. This choice helps maintain consistency with such conventions.
+
+### Practical Reasons
+
+1. **Avoiding Confusion**:
+   - By using `j`, Python avoids potential ambiguity and confusion, particularly in contexts where both electrical engineering and complex number computations are involved.
+
+2. **Historical Precedents**:
+   - The choice of `j` was influenced by earlier programming languages and mathematical software that adopted this convention, making it easier for Python to follow an established pattern.
+
+### Example
+
+In Python, you can use `j` to create complex numbers:
+
+```python
+a = 2 + 3j
+b = 1 - 4j
+c = a + b  # Result is 3 - 1j
+```
+
+If Python had used `i` instead, it might have clashed with the conventions used in electrical engineering, where `i` is a common symbol for current. By using `j`, Python ensures clarity and consistency across different domains of science and engineering.
