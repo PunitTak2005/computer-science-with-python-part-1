@@ -1,0 +1,56 @@
+A,B,C,D=9.2,2.0,4,21
+print(A/4)
+print(A//4)
+print(B**C)
+print(D//B)
+print(A%C)
+
+
+Here is the output of each operation along with an explanation:
+
+```python
+A, B, C, D = 9.2, 2.0, 4, 21
+
+print(A / 4)    # 9.2 divided by 4
+print(A // 4)   # 9.2 floor divided by 4
+print(B ** C)   # 2.0 raised to the power of 4
+print(D // B)   # 21 floor divided by 2.0
+print(A % C)    # 9.2 modulo 4
+```
+
+Let's go through each line:
+
+1. `print(A / 4)`
+   - This performs floating-point division.
+   - \( \frac{9.2}{4} = 2.3 \)
+   - Output: `2.3`
+
+2. `print(A // 4)`
+   - This performs floor division. For floating-point numbers, it returns the largest integer less than or equal to the result.
+   - \( \left\lfloor \frac{9.2}{4} \right\rfloor = \left\lfloor 2.3 \right\rfloor = 2.0 \)
+   - Output: `2.0`
+
+3. `print(B ** C)`
+   - This raises \( B \) to the power of \( C \).
+   - \( 2.0^4 = 16.0 \)
+   - Output: `16.0`
+
+4. `print(D // B)`
+   - This performs floor division.
+   - \( \left\lfloor \frac{21}{2.0} \right\rfloor = \left\lfloor 10.5 \right\rfloor = 10.0 \)
+   - Output: `10.0`
+
+5. `print(A % C)`
+   - This calculates the remainder of \( A \) divided by \( C \).
+   - \( 9.2 \mod 4 = 9.2 - 4 \times \left\lfloor \frac{9.2}{4} \right\rfloor = 9.2 - 4 \times 2 = 9.2 - 8 = 1.2 \)
+   - Output: `1.2`
+
+So, the printed outputs are:
+
+```
+2.3
+2.0
+16.0
+10.0
+1.2
+```
