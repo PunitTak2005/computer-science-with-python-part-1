@@ -1,0 +1,40 @@
+In Python, you can calculate the power of a number using the exponentiation operator `**` or the built-in `pow()` function. To calculate \(4.5^2\), you can use either method.
+
+### Using the Exponentiation Operator (`**`)
+
+```python
+result = 4.5 ** 2
+print("4.5 ** 2:", result)  # Output: 20.25
+```
+
+### Using the `pow()` Function
+
+```python
+result = pow(4.5, 2)
+print("pow(4.5, 2):", result)  # Output: 20.25
+```
+
+Both methods will give you the same result.
+
+Here's a complete code snippet demonstrating both methods:
+
+```python
+# Using the exponentiation operator
+result1 = 4.5 ** 2
+print("4.5 ** 2:", result1)  # Output: 20.25
+
+# Using the pow() function
+result2 = pow(4.5, 2)
+print("pow(4.5, 2):", result2)  # Output: 20.25
+```
+
+When you run this code, the output will be:
+
+```
+4.5 ** 2: 20.25
+pow(4.5, 2): 20.25
+```
+
+### Summary
+
+You can calculate \(4.5^2\) in Python using either the exponentiation operator `**` or the `pow()` function. Both will yield the same result of `20.25`.
