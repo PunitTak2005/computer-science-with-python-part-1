@@ -1,0 +1,28 @@
+In Python, the real and imaginary parts of a complex number are represented as **float** data types. 
+
+### Complex Numbers in Python
+
+A complex number in Python is represented using the `complex` data type and is written in the form `a + bj`, where `a` is the real part and `b` is the imaginary part. Both `a` and `b` are `float` values.
+
+**Example:**
+
+```python
+# Define a complex number
+z = 3.5 + 4.2j
+
+# Access the real part
+real_part = z.real  # 3.5 (float)
+
+# Access the imaginary part
+imaginary_part = z.imag  # 4.2 (float)
+
+print(f"Real part: {real_part} (type: {type(real_part)})")
+print(f"Imaginary part: {imaginary_part} (type: {type(imaginary_part)})")
+```
+
+### Summary
+
+- **Real Part**: Represented as a `float`.
+- **Imaginary Part**: Also represented as a `float`.
+
+In Python, complex numbers are inherently managed with floating-point precision for both parts, ensuring that calculations involving complex numbers are handled with appropriate numerical precision.
