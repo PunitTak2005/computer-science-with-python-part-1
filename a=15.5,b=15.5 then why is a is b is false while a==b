@@ -1,0 +1,28 @@
+In Python, `a is b` and `a == b` serve different purposes:
+
+1. **`a == b`**: This checks for value equality. It evaluates whether the values of `a` and `b` are equal. For `a == b`, the result will be `True` if `a` and `b` have the same value.
+
+2. **`a is b`**: This checks for identity equality. It evaluates whether `a` and `b` refer to the same object in memory (i.e., whether they are the same object). For `a is b`, the result will be `True` only if `a` and `b` are actually the same object in memory.
+
+### Explanation with Example
+
+```python
+a = 15.5
+b = 15.5
+
+print(a == b)  # True: because the values of a and b are equal
+print(a is b)  # False: because a and b are different objects in memory
+```
+
+### Why `a is b` is `False`:
+
+- **Floating Point Numbers**: In Python, floating-point numbers are not guaranteed to be stored in the same memory location even if they have the same value. This is because floating-point numbers are often represented in a way that might involve different instances or objects in memory.
+
+- **Object Identity**: `a is b` checks if both `a` and `b` point to the same object in memory. Even though `15.5` might be a common value, `a` and `b` are likely to be different instances of floating-point numbers. Hence, `a is b` evaluates to `False`.
+
+### Key Points:
+
+- **`a == b`**: Checks if `a` and `b` have the same value (true for `15.5 == 15.5`).
+- **`a is b`**: Checks if `a` and `b` are the exact same object (false for distinct floating-point instances).
+
+In summary, `a == b` can be `True` while `a is b` can be `False` due to differences in how objects are stored and managed in memory.
