@@ -1,0 +1,84 @@
+Operators are special symbols in programming languages that are used to perform operations on variables and values. They form the backbone of mathematical computations, logical operations, and data manipulation in programming. The primary function of operators is to take one or more operands (values or variables) and perform a specific operation to produce a result.
+
+### Types of Operators
+
+There are several types of operators, including:
+
+- **Arithmetic Operators**: Perform mathematical operations.
+- **Comparison Operators**: Compare two values and return a Boolean result.
+- **Logical Operators**: Perform logical operations and return a Boolean result.
+- **Bitwise Operators**: Perform bit-level operations on integer types.
+- **Assignment Operators**: Assign values to variables.
+- **Membership Operators**: Test for membership in a sequence (like lists, strings, etc.).
+- **Identity Operators**: Compare the memory locations of two objects.
+
+### Arithmetic Operators
+
+Arithmetic operators are used to perform common mathematical operations such as addition, subtraction, multiplication, division, and more. Here are the arithmetic operators in Python along with examples:
+
+1. **Addition (`+`)**
+   - Adds two operands.
+   - Example: `5 + 3` results in `8`.
+
+2. **Subtraction (`-`)**
+   - Subtracts the second operand from the first.
+   - Example: `10 - 4` results in `6`.
+
+3. **Multiplication (`*`)**
+   - Multiplies two operands.
+   - Example: `7 * 3` results in `21`.
+
+4. **Division (`/`)**
+   - Divides the first operand by the second (results in a float).
+   - Example: `20 / 5` results in `4.0`.
+
+5. **Floor Division (`//`)**
+   - Divides the first operand by the second and rounds down to the nearest integer.
+   - Example: `20 // 3` results in `6`.
+
+6. **Modulus (`%`)**
+   - Returns the remainder of the division of the first operand by the second.
+   - Example: `10 % 3` results in `1`.
+
+7. **Exponentiation (`**`)**
+   - Raises the first operand to the power of the second.
+   - Example: `2 ** 3` results in `8`.
+
+### Examples
+
+Here's a Python code snippet that demonstrates the use of arithmetic operators:
+
+```python
+a = 15
+b = 4
+
+# Addition
+result_add = a + b
+print("Addition:", result_add)  # Output: 19
+
+# Subtraction
+result_sub = a - b
+print("Subtraction:", result_sub)  # Output: 11
+
+# Multiplication
+result_mul = a * b
+print("Multiplication:", result_mul)  # Output: 60
+
+# Division
+result_div = a / b
+print("Division:", result_div)  # Output: 3.75
+
+# Floor Division
+result_floordiv = a // b
+print("Floor Division:", result_floordiv)  # Output: 3
+
+# Modulus
+result_mod = a % b
+print("Modulus:", result_mod)  # Output: 3
+
+# Exponentiation
+result_exp = a ** b
+print("Exponentiation:", result_exp)  # Output: 50625
+```
+
+These operators are essential for performing basic arithmetic and are widely used in various computations and algorithms in programming.
