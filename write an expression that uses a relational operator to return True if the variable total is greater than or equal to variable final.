@@ -1,0 +1,8 @@
+total = 75
+final = 70
+
+# Check if total is greater than or equal to final
+result = total >= final
+
+# Print the result
+print("Is total greater than or equal to final?", result)  # Output: True
