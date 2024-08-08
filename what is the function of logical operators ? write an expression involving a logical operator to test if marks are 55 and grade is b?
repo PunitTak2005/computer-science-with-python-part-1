@@ -1,0 +1,34 @@
+**Logical operators** are used to perform logical operations on Boolean values (`True` or `False`). They allow you to combine multiple conditions and test whether all or some of them are true. The primary logical operators in Python are:
+
+1. **`and`**: Returns `True` if both operands are true; otherwise, it returns `False`.
+   - Example: `(x > 5) and (y < 10)` returns `True` if both conditions are true.
+
+2. **`or`**: Returns `True` if at least one of the operands is true; otherwise, it returns `False`.
+   - Example: `(x > 5) or (y < 10)` returns `True` if at least one condition is true.
+
+3. **`not`**: Returns `True` if the operand is false; otherwise, it returns `False`.
+   - Example: `not (x > 5)` returns `True` if `x` is not greater than 5.
+
+### Example Expression
+
+To test if `marks` are `55` and `grade` is `'b'`, you can use the `and` logical operator. Here’s how you can write this expression:
+
+```python
+marks = 55
+grade = 'b'
+
+# Using logical operator 'and' to test both conditions
+result = (marks == 55) and (grade == 'b')
+
+print(result)  # Output: True if both conditions are met
+```
+
+### Explanation
+
+- **`marks == 55`**: This checks if the variable `marks` is equal to `55`.
+- **`grade == 'b'`**: This checks if the variable `grade` is equal to `'b'`.
+- **`and`**: Combines the two conditions. The `result` will be `True` if both conditions are true; otherwise, it will be `False`.
+
+In this example:
+- If `marks` is `55` and `grade` is `'b'`, the expression will evaluate to `True`.
+- If either `marks` is not `55` or `grade` is not `'b'`, the expression will evaluate to `False`.
