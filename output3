@@ -1,0 +1,14 @@
+a = 10
+b = 23
+c = 23
+
+print(a < b)      # Output: True
+print(b <= c)     # Output: True
+print(a < b <= c) # Output: True
+a = 23
+b = 10
+c = 10
+
+print(a < b)      # Output: False
+print(b <= c)     # Output: True
+print(a < b <= c) # Output: True
