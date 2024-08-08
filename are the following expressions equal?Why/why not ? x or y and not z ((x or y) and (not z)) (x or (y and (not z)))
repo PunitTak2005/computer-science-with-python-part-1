@@ -1,0 +1,95 @@
+Let's analyze and compare the three expressions to determine if they are equal. 
+
+### Expressions to Compare
+
+1. **Expression 1**: `x or y and not z`
+2. **Expression 2**: `((x or y) and (not z))`
+3. **Expression 3**: `(x or (y and (not z)))`
+
+### Operator Precedence
+
+To determine if these expressions are equal, we need to understand operator precedence:
+
+1. **Logical NOT**: `not`
+2. **Logical AND**: `and`
+3. **Logical OR**: `or`
+
+The precedence from highest to lowest is: `not`, `and`, `or`.
+
+### Evaluate Each Expression
+
+#### Expression 1: `x or y and not z`
+
+Using operator precedence:
+- `y and not z` is evaluated first.
+  - **`not z`** is evaluated first, converting `z` to its Boolean opposite.
+  - **`y and (not z)`** is evaluated next.
+- Finally, `x or (y and not z)` is evaluated.
+
+So, Expression 1 evaluates as:
+```python
+x or (y and (not z))
+```
+
+#### Expression 2: `((x or y) and (not z))`
+
+Using parentheses, this expression is evaluated in the following order:
+- **`x or y`** is evaluated first.
+- **`not z`** is evaluated next.
+- **`(x or y) and (not z)`** is evaluated last.
+
+So, Expression 2 evaluates as:
+```python
+(x or y) and (not z)
+```
+
+#### Expression 3: `(x or (y and (not z)))`
+
+Using parentheses, this expression is evaluated in the following order:
+- **`y and (not z)`** is evaluated first.
+- **`x or (y and (not z))`** is evaluated last.
+
+So, Expression 3 evaluates as:
+```python
+x or (y and (not z))
+```
+
+### Comparison
+
+**Expression 1** and **Expression 3** are equivalent:
+- **Expression 1** evaluates as: `x or (y and not z)`
+- **Expression 3** evaluates as: `x or (y and (not z))`
+
+Both are structurally identical and follow the same precedence rules.
+
+**Expression 2** is different:
+- **Expression 2** evaluates as: `(x or y) and (not z)`
+
+This expression evaluates `x or y` first, and then combines the result with `not z` using `and`. 
+
+### Summary
+
+- **Expression 1** and **Expression 3** are equal because they follow the same operator precedence rules and can be simplified to the same structure.
+- **Expression 2** is not equal to the other two. It evaluates `x or y` first and then applies `and` with `not z`, which is different from how Expression 1 and Expression 3 are evaluated.
+
+Here's a quick example to illustrate the difference:
+
+```python
+x = True
+y = False
+z = False
+
+print(x or y and not z)       # Evaluates to True
+print((x or y) and (not z))   # Evaluates to True
+print(x or (y and (not z)))   # Evaluates to True
+
+x = False
+y = True
+z = True
+
+print(x or y and not z)       # Evaluates to False
+print((x or y) and (not z))   # Evaluates to False
+print(x or (y and (not z)))   # Evaluates to False
+```
+
+In the cases provided, Expressions 1 and 3 yield the same result, whereas Expression 2 yields a different result based on the precedence and grouping of operations.
