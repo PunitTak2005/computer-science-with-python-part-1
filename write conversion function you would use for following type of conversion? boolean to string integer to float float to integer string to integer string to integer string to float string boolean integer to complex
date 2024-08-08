@@ -1,0 +1,69 @@
+Here are the Python conversion functions you would use for each type of conversion:
+
+1. **Boolean to String**:
+   - **Function**: `str()`
+   - **Example**:
+     ```python
+     bool_value = True
+     str_value = str(bool_value)  # 'True'
+     ```
+
+2. **Integer to Float**:
+   - **Function**: `float()`
+   - **Example**:
+     ```python
+     int_value = 42
+     float_value = float(int_value)  # 42.0
+     ```
+
+3. **Float to Integer**:
+   - **Function**: `int()`
+   - **Example**:
+     ```python
+     float_value = 3.14
+     int_value = int(float_value)  # 3
+     ```
+
+4. **String to Integer**:
+   - **Function**: `int()`
+   - **Example**:
+     ```python
+     str_value = "123"
+     int_value = int(str_value)  # 123
+     ```
+
+5. **String to Float**:
+   - **Function**: `float()`
+   - **Example**:
+     ```python
+     str_value = "3.14"
+     float_value = float(str_value)  # 3.14
+     ```
+
+6. **String to Boolean**:
+   - **Function**: `bool()`
+   - **Example**:
+     ```python
+     str_value = "True"
+     bool_value = bool(str_value)  # True (non-empty strings are truthy)
+     ```
+
+7. **Integer to Complex**:
+   - **Function**: `complex()`
+   - **Example**:
+     ```python
+     int_value = 5
+     complex_value = complex(int_value)  # (5+0j)
+     ```
+
+### Summary
+
+- **Boolean to String**: `str()`
+- **Integer to Float**: `float()`
+- **Float to Integer**: `int()`
+- **String to Integer**: `int()`
+- **String to Float**: `float()`
+- **String to Boolean**: `bool()` (Note: This conversion treats non-empty strings as `True` and empty strings as `False`)
+- **Integer to Complex**: `complex()`
+
+Each function is used to convert a value from one data type to another, enabling the manipulation and interaction of different data types in Python.
