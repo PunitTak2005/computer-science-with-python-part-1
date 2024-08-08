@@ -1,0 +1,98 @@
+**Binary operators** are operators that require two operands to perform their operation. They are used to perform a variety of operations, such as arithmetic, comparison, logical, and bitwise operations.
+
+### Examples of Arithmetic Binary Operators
+
+Here are five examples of arithmetic binary operators along with their explanations and examples:
+
+1. **Addition (`+`)**
+   - Adds two operands.
+   - Example:
+     ```python
+     a = 5
+     b = 3
+     result = a + b  # result is 8
+     ```
+
+2. **Subtraction (`-`)**
+   - Subtracts the second operand from the first.
+   - Example:
+     ```python
+     a = 10
+     b = 4
+     result = a - b  # result is 6
+     ```
+
+3. **Multiplication (`*`)**
+   - Multiplies two operands.
+   - Example:
+     ```python
+     a = 7
+     b = 6
+     result = a * b  # result is 42
+     ```
+
+4. **Division (`/`)**
+   - Divides the first operand by the second (results in a float).
+   - Example:
+     ```python
+     a = 20
+     b = 4
+     result = a / b  # result is 5.0
+     ```
+
+5. **Modulus (`%`)**
+   - Returns the remainder of the division of the first operand by the second.
+   - Example:
+     ```python
+     a = 10
+     b = 3
+     result = a % b  # result is 1
+     ```
+
+### Examples in Python
+
+Here's a Python code snippet demonstrating these arithmetic binary operators:
+
+```python
+# Addition
+a = 5
+b = 3
+result_add = a + b
+print("Addition:", result_add)  # Output: 8
+
+# Subtraction
+a = 10
+b = 4
+result_sub = a - b
+print("Subtraction:", result_sub)  # Output: 6
+
+# Multiplication
+a = 7
+b = 6
+result_mul = a * b
+print("Multiplication:", result_mul)  # Output: 42
+
+# Division
+a = 20
+b = 4
+result_div = a / b
+print("Division:", result_div)  # Output: 5.0
+
+# Modulus
+a = 10
+b = 3
+result_mod = a % b
+print("Modulus:", result_mod)  # Output: 1
+```
+
+### Summary
+
+Binary operators operate on two operands and are used to perform various operations. The five examples of arithmetic binary operators include:
+
+1. **Addition (`+`)**: Adds two numbers.
+2. **Subtraction (`-`)**: Subtracts one number from another.
+3. **Multiplication (`*`)**: Multiplies two numbers.
+4. **Division (`/`)**: Divides one number by another, resulting in a float.
+5. **Modulus (`%`)**: Returns the remainder of the division of one number by another.
+
+Understanding these operators is fundamental for performing arithmetic operations in programming.
