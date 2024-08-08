@@ -1,0 +1,59 @@
+state when would only first argument be evaluated and when both first and second arguments are evaluated in following expressions if a=5,b=10,c-5,d=0
+i-b>c and c>d
+ii-a<=b or c<=d
+iii-(b+c) <= a and not(c<a)
+iv-b<d and d<a
+
+Let's evaluate when only the first argument is evaluated and when both arguments are evaluated in the given logical expressions based on the values `a = 5`, `b = 10`, `c = 5`, `d = 0`. 
+
+### Logical Operators and Short-Circuit Evaluation
+
+- **`and` Operator**: Short-circuits (stops evaluating) if the first argument is `False` because the result is guaranteed to be `False` regardless of the second argument.
+- **`or` Operator**: Short-circuits (stops evaluating) if the first argument is `True` because the result is guaranteed to be `True` regardless of the second argument.
+
+### Given Values
+
+- `a = 5`
+- `b = 10`
+- `c = 5`
+- `d = 0`
+
+### Expression Analysis
+
+1. **Expression: `b > c and c > d`**
+
+   - **`b > c`** evaluates to `10 > 5`, which is `True`.
+   - Since `b > c` is `True`, the second part `c > d` (i.e., `5 > 0`, which is `True`) will be evaluated.
+   - **Both arguments** are evaluated in this expression because the first argument is `True`, and `and` requires the second argument to determine the final result.
+
+2. **Expression: `a <= b or c <= d`**
+
+   - **`a <= b`** evaluates to `5 <= 10`, which is `True`.
+   - Since `a <= b` is `True`, the second part `c <= d` (i.e., `5 <= 0`, which is `False`) will **not** be evaluated.
+   - **Only the first argument** is evaluated in this expression because the first argument is `True`, and `or` short-circuits.
+
+3. **Expression: `(b + c) <= a and not(c < a)`**
+
+   - **`(b + c) <= a`** evaluates to `(10 + 5) <= 5`, which is `15 <= 5`, which is `False`.
+   - Since `(b + c) <= a` is `False`, the second part `not (c < a)` (i.e., `not (5 < 5)`, which is `True`) will **not** be evaluated.
+   - **Only the first argument** is evaluated in this expression because the first argument is `False`, and `and` short-circuits.
+
+4. **Expression: `b < d and d < a`**
+
+   - **`b < d`** evaluates to `10 < 0`, which is `False`.
+   - Since `b < d` is `False`, the second part `d < a` (i.e., `0 < 5`, which is `True`) will **not** be evaluated.
+   - **Only the first argument** is evaluated in this expression because the first argument is `False`, and `and` short-circuits.
+
+### Summary
+
+- **Expression i**: `b > c and c > d`
+  - Both arguments are evaluated because `b > c` is `True`.
+
+- **Expression ii**: `a <= b or c <= d`
+  - Only the first argument is evaluated because `a <= b` is `True`.
+
+- **Expression iii**: `(b + c) <= a and not (c < a)`
+  - Only the first argument is evaluated because `(b + c) <= a` is `False`.
+
+- **Expression iv**: `b < d and d < a`
+  - Only the first argument is evaluated because `b < d` is `False`.
