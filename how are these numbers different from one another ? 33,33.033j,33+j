@@ -1,0 +1,38 @@
+The numbers `33`, `33.033j`, and `33 + j` are different in Python due to their types and how they are represented:
+
+1. **`33`**:
+   - **Type**: Integer (`int`)
+   - **Description**: This is a whole number with no fractional part or imaginary component.
+   - **Example Usage**: Arithmetic operations with other integers or floats.
+   - **Example**:
+     ```python
+     x = 33
+     print(type(x))  # <class 'int'>
+     ```
+
+2. **`33.033j`**:
+   - **Type**: Complex Number (`complex`)
+   - **Description**: This represents a complex number with a real part of `0` and an imaginary part of `33.033`. In Python, complex numbers are written as `a + bj`, where `a` is the real part and `b` is the imaginary part.
+   - **Example Usage**: Used in complex arithmetic, such as calculations involving imaginary numbers.
+   - **Example**:
+     ```python
+     z = 33.033j
+     print(type(z))  # <class 'complex'>
+     print(z.real)   # 0.0
+     print(z.imag)   # 33.033
+     ```
+
+3. **`33 + j`**:
+   - **Type**: Syntax Error (assuming `j` is not defined elsewhere)
+   - **Description**: This is intended to be a complex number, but `j` needs to be defined or initialized as a valid variable or constant. In Python, `j` is not automatically recognized as an imaginary unit unless it's used in a complex number context (e.g., `3 + 2j`).
+   - **Example**: To use `33 + j` correctly, `j` should be defined as a variable or a literal complex number.
+     ```python
+     j = 5
+     z = 33 + j  # z will be 38
+     ```
+
+### Summary
+
+- **`33`**: An integer with no fractional or imaginary parts.
+- **`33.033j`**: A complex number with no real part and an imaginary part of `33.033`.
+- **`33 + j`**: This is not valid unless `j` is defined. If `j` is defined as a number, `33 + j` becomes a valid arithmetic expression. For complex numbers, the imaginary unit should be written directly in the form `a + bj`.
