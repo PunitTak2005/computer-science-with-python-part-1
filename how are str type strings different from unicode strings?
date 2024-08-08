@@ -1,0 +1,60 @@
+In Python, the distinction between `str` type strings and `unicode` type strings primarily depends on the version of Python you are using.
+
+### Python 2
+
+In Python 2, there are two types of strings:
+
+1. **`str` type**: These are sequences of bytes. By default, string literals are of this type. For example:
+   ```python
+   my_str = 'hello'
+   ```
+
+2. **`unicode` type**: These are sequences of Unicode code points. To create a `unicode` string, you prefix the string with a `u`. For example:
+   ```python
+   my_unicode_str = u'hello'
+   ```
+
+### Python 3
+
+In Python 3, the distinction is simplified:
+
+1. **`str` type**: This is the default string type, and it represents Unicode strings. All string literals are Unicode by default. For example:
+   ```python
+   my_str = 'hello'
+   ```
+
+2. **`bytes` type**: If you need to work with raw bytes, you use the `bytes` type. A `bytes` object is created by prefixing the string with a `b`. For example:
+   ```python
+   my_bytes = b'hello'
+   ```
+
+### Summary of Differences
+
+- **Python 2**:
+  - `str`: A sequence of bytes.
+  - `unicode`: A sequence of Unicode code points, created by prefixing with `u`.
+
+- **Python 3**:
+  - `str`: A sequence of Unicode code points (the default string type).
+  - `bytes`: A sequence of bytes, created by prefixing with `b`.
+
+### Practical Implications
+
+- **Encoding and Decoding**: In both Python 2 and Python 3, you often need to encode and decode strings when converting between `str` and `unicode`/`bytes`. For example:
+  - Python 2:
+    ```python
+    unicode_str = u'hello'
+    byte_str = unicode_str.encode('utf-8')
+    decoded_unicode_str = byte_str.decode('utf-8')
+    ```
+
+  - Python 3:
+    ```python
+    unicode_str = 'hello'
+    byte_str = unicode_str.encode('utf-8')
+    decoded_unicode_str = byte_str.decode('utf-8')
+    ```
+
+- **Compatibility**: When writing code that needs to be compatible with both Python 2 and Python 3, be mindful of these differences and use tools like `six` or `future` libraries to ease the transition.
+
+Understanding these distinctions is crucial for handling text data correctly, especially when dealing with internationalization or working with data that includes non-ASCII characters.
