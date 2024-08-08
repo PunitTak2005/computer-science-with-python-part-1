@@ -1,0 +1,21 @@
+# Literal Constants
+x = 5            # 5 is a literal constant
+y = 3.14         # 3.14 is a literal constant
+z = 'hello'      # 'hello' is a literal constant
+
+# Identifiers
+a = x            # x is an identifier (variable) referring to the value 5
+b = y + 2        # y is an identifier, 2 is a literal constant
+
+# Parenthesized Expressions
+result = (x + y) * 2  # (x + y) is a parenthesized expression
+
+# Function Calls
+length = len('abc')  # len('abc') is a function call expression
+
+# Indexing and Slicing
+item = my_list[3]    # my_list[3] is an indexing expression
+
+# Attribute Access
+text = 'hello'
+upper_text = text.upper()  # text.upper() is an attribute access expression
