@@ -1,0 +1,12 @@
+i = 4
+j = 5
+k = 4
+
+print(i < k)   # False
+print(i < j)   # True
+print(i <= k)  # True
+print(i == j)  # False
+print(j > k)   # True
+print(j >= i)  # True
+print(j != i)  # True
+print(j <= k)  # False
