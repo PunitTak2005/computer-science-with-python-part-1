@@ -1,0 +1,39 @@
+# Case 1: check = 3, mate = 0.0
+check = 3
+mate = 0.0
+print("Case 1:")
+print("check or mate:", check or mate)           # Output: 3
+print("mate or check:", mate or check)           # Output: 3
+print("check and not mate:", check and not mate) # Output: 3
+print("check and mate:", check and mate)         # Output: 0.0
+print("mate and check:", mate and check)         # Output: 0.0
+
+# Case 2: check = 0, mate = -5
+check = 0
+mate = -5
+print("\nCase 2:")
+print("check or mate:", check or mate)           # Output: -5
+print("mate or check:", mate or check)           # Output: -5
+print("check and not mate:", check and not mate) # Output: 0
+print("check and mate:", check and mate)         # Output: 0
+print("mate and check:", mate and check)         # Output: 0
+
+# Case 3: check = ' ', mate = 'e'
+check = ' '
+mate = 'e'
+print("\nCase 3:")
+print("check or mate:", check or mate)           # Output: ' '
+print("mate or check:", mate or check)           # Output: 'e'
+print("check and not mate:", check and not mate) # Output: ' '
+print("check and mate:", check and mate)         # Output: 'e'
+print("mate and check:", mate and check)         # Output: ' '
+
+# Case 4: check = 'merra', mate = ' '
+check = 'merra'
+mate = ' '
+print("\nCase 4:")
+print("check or mate:", check or mate)           # Output: 'merra'
+print("mate or check:", mate or check)           # Output: 'merra'
+print("check and not mate:", check and not mate) # Output: 'merra'
+print("check and mate:", check and mate)         # Output: ' '
+print("mate and check:", mate and check)         # Output: ' '
