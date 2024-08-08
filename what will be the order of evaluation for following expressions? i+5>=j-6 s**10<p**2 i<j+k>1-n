@@ -1,0 +1,66 @@
+To determine the order of evaluation for the given expressions, you need to understand operator precedence and associativity in Python. Here’s a breakdown of each expression with the relevant rules:
+
+### 1. Expression: `i + 5 >= j - 6`
+
+**Order of Evaluation:**
+1. **Addition (`+`)**: First, the addition is performed.
+   - Evaluate `i + 5`.
+2. **Subtraction (`-`)**: Next, the subtraction is performed.
+   - Evaluate `j - 6`.
+3. **Comparison (`>=`)**: Finally, the comparison is performed between the results of the addition and subtraction.
+   - Compare the result of `i + 5` with `j - 6`.
+
+**Detailed Evaluation Steps:**
+1. Compute `i + 5`.
+2. Compute `j - 6`.
+3. Compare the results with the `>=` operator.
+
+### 2. Expression: `s ** 10 < p ** 2`
+
+**Order of Evaluation:**
+1. **Exponentiation (`**`)**: First, the exponentiation is performed.
+   - Evaluate `s ** 10`.
+   - Evaluate `p ** 2`.
+2. **Comparison (`<`)**: Finally, the comparison is performed between the results of the exponentiation.
+   - Compare the result of `s ** 10` with `p ** 2`.
+
+**Detailed Evaluation Steps:**
+1. Compute `s ** 10`.
+2. Compute `p ** 2`.
+3. Compare the results with the `<` operator.
+
+### 3. Expression: `i < j + k > 1 - n`
+
+**Order of Evaluation:**
+1. **Addition (`+`)**: First, perform addition within the expression.
+   - Evaluate `j + k`.
+2. **Subtraction (`-`)**: Compute the subtraction.
+   - Evaluate `1 - n`.
+3. **Comparison (`<` and `>`)**: Finally, perform the comparisons.
+   - First, compare `i < (result of j + k)`.
+   - Then, compare the result of the previous comparison to `(result of 1 - n)` with the `>` operator.
+
+**Detailed Evaluation Steps:**
+1. Compute `j + k`.
+2. Compute `1 - n`.
+3. Evaluate `i < (result of j + k)`.
+4. Evaluate `(result of i < (j + k)) > (result of 1 - n)`.
+
+### Summary of Operator Precedence and Associativity
+
+- **Exponentiation (`**`)**: Highest precedence, evaluated first.
+- **Addition (`+`) and Subtraction (`-`)**: Evaluated next.
+- **Comparison Operators (`>=`, `<`, `>`)**: Lowest precedence among the operators in these expressions, evaluated last.
+
+**Complete Order of Evaluation:**
+
+1. **`i + 5 >= j - 6`**
+   - Addition → Subtraction → Comparison
+
+2. **`s ** 10 < p ** 2`**
+   - Exponentiation → Comparison
+
+3. **`i < j + k > 1 - n`**
+   - Addition → Subtraction → Comparison (both `<` and `>` are evaluated based on their relative precedence and associativity)
+
+By following these rules, you ensure that the expressions are evaluated correctly according to Python's operator precedence and associativity.
