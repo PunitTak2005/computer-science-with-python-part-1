@@ -1,0 +1,70 @@
+**Type conversion (or coercion)** refers to the process of converting a value of one data type to another. In Python, type conversion can be explicit (where the programmer explicitly converts types) or implicit (where Python automatically converts types during operations).
+
+### Types of Type Conversion
+
+1. **Explicit Type Conversion**:
+   - The programmer manually converts a value from one type to another using conversion functions.
+   - **Common Conversion Functions**:
+     - `int()`: Converts a value to an integer.
+       - Example: `int(3.14)` → `3`
+     - `float()`: Converts a value to a floating-point number.
+       - Example: `float(3)` → `3.0`
+     - `str()`: Converts a value to a string.
+       - Example: `str(123)` → `'123'`
+     - `bool()`: Converts a value to a Boolean.
+       - Example: `bool(0)` → `False`
+
+2. **Implicit Type Conversion**:
+   - Python automatically converts one data type to another during operations to preserve consistency and avoid data loss.
+   - **Examples**:
+     - **Arithmetic Operations**: When performing arithmetic operations involving integers and floats, Python promotes integers to floats.
+       - Example: `5 + 3.2` → `8.2` (integer `5` is converted to float `5.0` before addition)
+     - **Comparison Operations**: During comparisons, if operands are of different types, Python may convert them to a common type.
+       - Example: Comparing an integer and a float, like `3 == 3.0`, will be evaluated as `True` because the integer `3` is converted to float `3.0`.
+
+### Examples
+
+**Explicit Type Conversion**:
+
+```python
+# Converting float to integer
+x = 3.14
+y = int(x)  # y is 3
+
+# Converting integer to string
+num = 42
+str_num = str(num)  # str_num is '42'
+
+# Converting string to float
+str_value = "3.14159"
+float_value = float(str_value)  # float_value is 3.14159
+```
+
+**Implicit Type Conversion**:
+
+```python
+# Integer and float addition
+a = 5
+b = 2.5
+result = a + b  # result is 7.5 (a is implicitly converted to float)
+
+# Integer and float comparison
+c = 10
+d = 10.0
+comparison = (c == d)  # comparison is True (c is implicitly converted to float)
+```
+
+### How Python Performs Type Conversion
+
+1. **Automatic Promotion**:
+   - Python automatically promotes types to a more general type to handle operations involving different types.
+   - For example, in an arithmetic operation involving an integer and a float, Python promotes the integer to a float to ensure precision.
+
+2. **Data Coercion**:
+   - Python handles implicit type conversion based on the context of the operation. It attempts to coerce data types to make operations compatible and meaningful.
+
+3. **Error Handling**:
+   - If implicit conversion is not possible or meaningful, Python raises a `TypeError`.
+   - Example: `int("string")` will raise a `TypeError` because converting a non-numeric string to an integer is not possible.
+
+In summary, type conversion in Python allows you to convert between different data types, either explicitly using conversion functions or implicitly during operations. Python's approach ensures that operations between mixed types are handled gracefully and consistently.
