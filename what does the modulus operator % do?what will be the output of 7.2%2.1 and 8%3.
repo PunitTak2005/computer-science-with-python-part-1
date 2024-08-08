@@ -1,0 +1,12 @@
+The modulus operator % returns the remainder of the division of one number by another. It's used to find out what remains after division. Here's a more detailed look:
+
+For integers, it gives the remainder of the division.
+Example: 10 % 3 results in 1, because 10 divided by 3 is 3 with a remainder of 1.
+For floating-point numbers, it also gives the remainder of the division but in floating-point form.
+Example: 7.5 % 2.5 results in 0.0, because 7.5 divided by 2.5 is 3 with no remainder.
+
+a=8%3
+b=7.2%2.1
+print(a,b)
+
+2 0.8999999999999999
