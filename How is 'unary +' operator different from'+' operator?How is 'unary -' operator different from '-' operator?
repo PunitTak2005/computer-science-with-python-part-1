@@ -1,0 +1,83 @@
+In programming, the unary `+` and unary `-` operators have distinct roles compared to their binary counterparts, `+` and `-`. Here's a detailed explanation of the differences:
+
+### Unary `+` Operator vs. Binary `+` Operator
+
+1. **Unary `+` Operator:**
+   - The unary `+` operator is used to indicate that a number is positive.
+   - It doesn't change the value of its operand. Essentially, it returns the operand itself.
+   - Example:
+     ```python
+     x = 5
+     y = +x  # y is 5
+     ```
+
+2. **Binary `+` Operator:**
+   - The binary `+` operator is used to add two numbers together.
+   - It requires two operands.
+   - Example:
+     ```python
+     x = 5
+     y = 3
+     z = x + y  # z is 8
+     ```
+
+### Unary `-` Operator vs. Binary `-` Operator
+
+1. **Unary `-` Operator:**
+   - The unary `-` operator is used to negate a number, effectively multiplying it by -1.
+   - It changes the sign of its operand.
+   - Example:
+     ```python
+     x = 5
+     y = -x  # y is -5
+     ```
+
+2. **Binary `-` Operator:**
+   - The binary `-` operator is used to subtract one number from another.
+   - It requires two operands.
+   - Example:
+     ```python
+     x = 5
+     y = 3
+     z = x - y  # z is 2
+     ```
+
+### Examples in Python
+
+Here's a code snippet to illustrate the differences:
+
+```python
+# Unary + and -
+a = 10
+b = -10
+
+positive_a = +a  # Unary +, result is 10
+negative_a = -a  # Unary -, result is -10
+
+positive_b = +b  # Unary +, result is -10
+negative_b = -b  # Unary -, result is 10
+
+print("Unary +a:", positive_a)  # Output: 10
+print("Unary -a:", negative_a)  # Output: -10
+print("Unary +b:", positive_b)  # Output: -10
+print("Unary -b:", negative_b)  # Output: 10
+
+# Binary + and -
+x = 7
+y = 3
+
+addition = x + y  # Binary +, result is 10
+subtraction = x - y  # Binary -, result is 4
+
+print("Binary x + y:", addition)  # Output: 10
+print("Binary x - y:", subtraction)  # Output: 4
+```
+
+### Summary
+
+- **Unary `+`**: Does not change the value of its operand, simply indicates it's positive.
+- **Binary `+`**: Adds two operands.
+- **Unary `-`**: Negates the value of its operand, changing its sign.
+- **Binary `-`**: Subtracts the second operand from the first.
+
+Understanding these differences is crucial for correctly implementing and debugging mathematical expressions in your programs.
