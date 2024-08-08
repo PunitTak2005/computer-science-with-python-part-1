@@ -1,0 +1,79 @@
+To understand the order of evaluation for these expressions, you need to consider the precedence and associativity of operators in Python. Here's a detailed breakdown:
+
+### 1. Expression: `a > b or b <= d`
+
+**Order of Evaluation:**
+1. **Relational Operators (`>`, `<=`)**: Evaluate the relational comparisons first.
+   - Compute `a > b`
+   - Compute `b <= d`
+2. **Logical Operator (`or`)**: Combine the results of the relational comparisons using the `or` operator.
+
+**Detailed Steps:**
+1. Compute `a > b`.
+2. Compute `b <= d`.
+3. Combine the results with `or`.
+
+### 2. Expression: `x == y and y + m`
+
+**Order of Evaluation:**
+1. **Equality Operator (`==`)**: Evaluate the equality comparison first.
+   - Compute `x == y`
+2. **Addition (`+`)**: Evaluate the addition.
+   - Compute `y + m`
+3. **Logical Operator (`and`)**: Combine the results using the `and` operator. Note that for `and`, the second expression (`y + m`) will only be evaluated if the first expression (`x == y`) is true (short-circuit evaluation).
+
+**Detailed Steps:**
+1. Compute `x == y`.
+2. If `x == y` is `True`, then compute `y + m`.
+3. Combine the results with `and`.
+
+### 3. Expression: `a > b < c > d`
+
+**Order of Evaluation:**
+1. **Relational Operators (`>`, `<`)**: Evaluate the relational comparisons from left to right.
+   - Compute `a > b`
+   - Compute the result of the previous comparison `< c`
+   - Compute the result of the previous comparison `> d`
+
+**Detailed Steps:**
+1. Compute `a > b`.
+2. Use the result to evaluate `< c`.
+3. Use the result to evaluate `> d`.
+
+**Example Code to Demonstrate the Evaluation:**
+
+```python
+# Define some example values
+a = 10
+b = 5
+c = 7
+d = 3
+x = 8
+y = 8
+m = 2
+
+# Expression 1: a > b or b <= d
+result1 = (a > b) or (b <= d)
+print("a > b or b <= d:", result1)  # True because a > b is True
+
+# Expression 2: x == y and y + m
+result2 = (x == y) and (y + m)
+print("x == y and y + m:", result2)  # 10 because x == y is True, so y + m is evaluated
+
+# Expression 3: a > b < c > d
+result3 = a > b < c > d
+print("a > b < c > d:", result3)  # True because 10 > 5 < 7 > 3 is True
+```
+
+### Summary of Order of Evaluation:
+
+1. **`a > b or b <= d`**
+   - Relational comparisons (`a > b` and `b <= d`) → Logical `or` operator
+
+2. **`x == y and y + m`**
+   - Equality comparison (`x == y`) → Addition (`y + m`) → Logical `and` operator
+
+3. **`a > b < c > d`**
+   - Relational comparisons evaluated left to right (`a > b`, then result `< c`, then result `> d`)
+
+Understanding these rules ensures that expressions are evaluated correctly according to Python's operator precedence and associativity.
