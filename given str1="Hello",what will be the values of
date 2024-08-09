@@ -1,0 +1,35 @@
+Let's break down each index operation for the string `str1 = "Hello"`:
+
+### Given String
+```python
+str1 = "Hello"
+```
+
+### Accessing String Characters
+
+1. **`str1[0]`**:
+   - **Value**: `'H'`
+   - **Explanation**: Index `0` refers to the first character of the string.
+
+2. **`str1[1]`**:
+   - **Value**: `'e'`
+   - **Explanation**: Index `1` refers to the second character of the string.
+
+3. **`str1[-5]`**:
+   - **Value**: `'H'`
+   - **Explanation**: Index `-5` refers to the first character of the string. In Python, negative indexing starts from the end of the string. So, `-5` refers to the same position as `0`.
+
+4. **`str1[-1]`**:
+   - **Value**: `'o'`
+   - **Explanation**: Index `-1` refers to the last character of the string. Negative indices count from the end of the string, so `-1` points to the last character.
+
+5. **`str1[5]`**:
+   - **Value**: `IndexError`
+   - **Explanation**: Index `5` is out of range for this string. The valid indices for a string of length 5 are from `0` to `4`. Therefore, accessing index `5` will raise an `IndexError`.
+
+### Summary of Values
+- **`str1[0]`**: `'H'`
+- **`str1[1]`**: `'e'`
+- **`str1[-5]`**: `'H'`
+- **`str1[-1]`**: `'o'`
+- **`str1[5]`**: Raises `IndexError` because the index is out of range.
