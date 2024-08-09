@@ -1,0 +1,57 @@
+Python supports three main types of string representations:
+
+1. **String (`str`)**: This is the standard string type in Python 3. It is used to represent Unicode text, which means it can store any character from any language, as well as various symbols and emojis. Strings are immutable in Python, meaning once they are created, they cannot be modified.
+
+    ```python
+    s = "Hello, World!"
+    ```
+
+2. **Bytes (`bytes`)**: This type represents binary data and is used when dealing with raw byte data, such as file contents or network communications. Unlike `str`, a `bytes` object is immutable. It stores sequences of bytes (8-bit values), and each byte value is an integer in the range 0-255.
+
+    ```python
+    b = b"Hello, World!"
+    ```
+
+3. **Bytearray (`bytearray`)**: Similar to `bytes`, but mutable. This means you can modify the contents of a `bytearray` after it is created. It's used when you need to work with binary data that may change.
+
+    ```python
+    ba = bytearray(b"Hello, World!")
+    ba[0] = ord('h')
+    ```
+
+### Differences
+
+1. **Encoding**:
+   - `str`: Encodes text as Unicode, which is useful for representing text from any language and including special characters.
+   - `bytes` and `bytearray`: Represent binary data, where each element is a byte (an integer between 0 and 255). They do not directly represent text, but can be decoded to `str` using a specified encoding (e.g., UTF-8).
+
+2. **Mutability**:
+   - `str` and `bytes`: Immutable. Once created, their contents cannot be changed.
+   - `bytearray`: Mutable. Contents can be modified after creation.
+
+3. **Usage**:
+   - `str`: Used for text manipulation and processing.
+   - `bytes`: Used for handling raw binary data, often in I/O operations like file reading/writing or network communication.
+   - `bytearray`: Similar to `bytes` but allows modifications, useful for working with binary data that needs to be changed.
+
+### Example Code
+
+```python
+# String (str)
+s = "Hello, World!"
+print(type(s), s)
+
+# Bytes (bytes)
+b = b"Hello, World!"
+print(type(b), b)
+
+# Bytearray (bytearray)
+ba = bytearray(b"Hello, World!")
+print(type(ba), ba)
+
+# Modify bytearray
+ba[0] = ord('h')
+print(ba)
+```
+
+In summary, Python supports `str`, `bytes`, and `bytearray` for string-like data, each with different use cases and characteristics.
