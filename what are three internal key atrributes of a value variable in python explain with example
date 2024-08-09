@@ -1,0 +1,112 @@
+In Python, every object (including variables) has three key internal attributes: `id`, `type`, and `value`. These attributes are crucial for understanding how Python handles data and memory.
+
+### 1. `id`
+
+The `id` attribute is a unique identifier for the object. It is essentially the memory address where the object is stored. You can retrieve the `id` of an object using the `id()` function.
+
+### 2. `type`
+
+The `type` attribute specifies the type of the object, indicating what kind of value the object holds. You can retrieve the type of an object using the `type()` function.
+
+### 3. `value`
+
+The `value` attribute is the actual data held by the object. This can be retrieved directly by referencing the variable. The concept of "value" is straightforward for simple data types like integers and strings but becomes more complex for compound data types like lists and dictionaries.
+
+### Example
+
+Let's consider an example to illustrate these three attributes:
+
+```python
+x = 42
+y = [1, 2, 3]
+
+# id
+print(f"id(x): {id(x)}")
+print(f"id(y): {id(y)}")
+
+# type
+print(f"type(x): {type(x)}")
+print(f"type(y): {type(y)}")
+
+# value
+print(f"value of x: {x}")
+print(f"value of y: {y}")
+```
+
+#### Output:
+```python
+id(x): 9789696
+id(y): 140187845457168
+
+type(x): <class 'int'>
+type(y): <class 'list'>
+
+value of x: 42
+value of y: [1, 2, 3]
+```
+
+### Explanation
+
+1. **`id`**:
+    - `id(x)`: This returns the unique identifier (memory address) for the integer object `42`.
+    - `id(y)`: This returns the unique identifier (memory address) for the list object `[1, 2, 3]`.
+
+2. **`type`**:
+    - `type(x)`: This returns `<class 'int'>`, indicating that `x` is an integer.
+    - `type(y)`: This returns `<class 'list'>`, indicating that `y` is a list.
+
+3. **`value`**:
+    - The value of `x` is `42`, which is the actual data held by the variable `x`.
+    - The value of `y` is `[1, 2, 3]`, which is the actual data held by the variable `y`.
+
+### Further Example with Mutable and Immutable Types
+
+Let's examine how these attributes behave with mutable and immutable types:
+
+```python
+a = 10
+b = a
+a = a + 5
+
+# id and value before and after mutation
+print(f"Original id(a): {id(a)}")
+print(f"Original value of a: {a}")
+print(f"Original id(b): {id(b)}")
+print(f"Original value of b: {b}")
+
+# Mutable example
+c = [1, 2, 3]
+d = c
+c.append(4)
+
+# id and value before and after mutation
+print(f"Original id(c): {id(c)}")
+print(f"Original value of c: {c}")
+print(f"Original id(d): {id(d)}")
+print(f"Original value of d: {d}")
+```
+
+#### Output:
+```python
+Original id(a): 9789760
+Original value of a: 15
+Original id(b): 9789696
+Original value of b: 10
+
+Original id(c): 140187845475392
+Original value of c: [1, 2, 3, 4]
+Original id(d): 140187845475392
+Original value of d: [1, 2, 3, 4]
+```
+
+### Explanation
+
+1. **Immutable Example** (`int`):
+    - `a` is initially `10` and `b` is assigned to `a`, so both share the same `id`.
+    - When `a` is modified to `a + 5`, a new integer object `15` is created, and `a` now points to this new object with a different `id`. The original `b` still points to `10`.
+
+2. **Mutable Example** (`list`):
+    - `c` is a list `[1, 2, 3]` and `d` is assigned to `c`, so both share the same `id`.
+    - When `c` is modified by appending `4`, the same list object is updated, so both `c` and `d` reflect the change, sharing the same `id` and value `[1, 2, 3, 4]`.
+
+Understanding these attributes helps in comprehending how Python handles object identity, type, and value, especially when dealing with mutable and immutable objects.
