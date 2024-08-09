@@ -1,0 +1,35 @@
+Yes, it is true that if two objects return `True` for the `is` operator, they will also return `True` for the `==` operator. This is because the `is` operator checks for identity (whether two references point to the same object in memory), while the `==` operator checks for equality (whether the values of the objects are the same).
+
+If two objects are identical (i.e., they are the same object in memory), they must have the same value. Therefore, the equality check (`==`) will also return `True`.
+
+Here’s an example to illustrate this:
+
+```python
+# Creating two variables that reference the same object
+a = [1, 2, 3]
+b = a
+
+# Checking identity and equality
+print(a is b)  # True, because both a and b reference the same object
+print(a == b)  # True, because the values are the same
+
+# Creating two variables that reference different objects with the same value
+c = [1, 2, 3]
+d = [1, 2, 3]
+
+# Checking identity and equality
+print(c is d)  # False, because c and d reference different objects
+print(c == d)  # True, because the values are the same
+```
+
+In the first case, `a is b` returns `True` because both `a` and `b` point to the same list object in memory. Consequently, `a == b` also returns `True` because they have the same value.
+
+In the second case, `c is d` returns `False` because `c` and `d` are different objects in memory, even though they have the same value. Therefore, `c == d` returns `True` because the lists have the same content.
+
+### Important Note
+
+The reverse is not always true: two objects that are equal (`==`) may not be identical (`is`). For instance, two different list objects with the same contents are equal but not identical.
+
+Here’s a summary:
+- If `a is b` is `True`, then `a == b` will also be `True`.
+- If `a == b` is `True`, `a is b` may or may not be `True`.
