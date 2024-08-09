@@ -1,0 +1,103 @@
+In Python, the concepts of "atom" and "expression" are fundamental to understanding how the language parses and evaluates code. Let's break down these terms:
+
+### Atom
+
+An atom is the most basic building block in Python. Atoms represent the simplest elements of a Python program that cannot be broken down further in terms of the language's syntax. These include:
+
+1. **Identifiers (names)**: These are names given to variables, functions, classes, etc.
+   ```python
+   x, my_variable, function_name
+   ```
+
+2. **Literals**: These are constant values of built-in types.
+   - **Integer literals**: `42`, `0`, `-7`
+   - **Floating-point literals**: `3.14`, `2.0`, `-0.001`
+   - **String literals**: `"hello"`, `'world'`
+   - **Boolean literals**: `True`, `False`
+   - **None**: The singleton value `None`
+
+3. **Enclosures**: These include parentheses `()`, brackets `[]`, and braces `{}` used for grouping expressions, creating lists, tuples, dictionaries, and sets.
+   ```python
+   (1, 2), [3, 4], {5: 'five', 6: 'six'}, {7, 8}
+   ```
+
+4. **Parenthesized forms**: Expressions enclosed in parentheses are also atoms.
+   ```python
+   (a + b)
+   ```
+
+5. **Yield expressions**: Yield expressions used in generators.
+   ```python
+   yield x
+   ```
+
+6. **Await expressions**: Await expressions used in asynchronous code.
+   ```python
+   await coroutine_function()
+   ```
+
+### Expression
+
+An expression is a combination of values, variables, operators, and calls to functions that can be evaluated to produce a value. Expressions are more complex structures built using atoms and operators. They are the basic units of computation in Python and can be used wherever a value is required.
+
+#### Types of Expressions
+
+1. **Arithmetic expressions**: Combine numbers and operators to produce a numeric result.
+   ```python
+   2 + 3 * (4 - 1) / 2
+   ```
+
+2. **String expressions**: Combine strings and operators to produce a string result.
+   ```python
+   "hello" + " " + "world"
+   ```
+
+3. **Boolean expressions**: Combine values and logical operators to produce a Boolean result.
+   ```python
+   (x > 0) and (y < 10)
+   ```
+
+4. **List, dictionary, and set comprehensions**: Produce new lists, dictionaries, or sets from existing ones.
+   ```python
+   [x * x for x in range(10)]  # List comprehension
+   {x: x * x for x in range(10)}  # Dictionary comprehension
+   {x * x for x in range(10)}  # Set comprehension
+   ```
+
+5. **Function calls**: Combine function names with arguments to produce a result.
+   ```python
+   math.sqrt(16)
+   ```
+
+6. **Lambda expressions**: Create anonymous functions.
+   ```python
+   lambda x: x * 2
+   ```
+
+### Example Code
+
+Let's look at some example code to see atoms and expressions in action:
+
+```python
+# Atoms
+a = 5           # '5' is an integer literal atom
+b = 3.14        # '3.14' is a floating-point literal atom
+name = "Alice"  # "Alice" is a string literal atom
+
+# Expressions
+sum = a + b                # 'a + b' is an arithmetic expression
+greeting = "Hello, " + name  # '"Hello, " + name' is a string expression
+is_positive = (a > 0)        # 'a > 0' is a boolean expression
+square_list = [x * x for x in range(5)]  # List comprehension expression
+
+# Function call expression
+import math
+result = math.sqrt(16)  # 'math.sqrt(16)' is a function call expression
+
+# Lambda expression
+double = lambda x: x * 2  # 'lambda x: x * 2' is a lambda expression
+```
+
+In summary:
+- **Atom**: The simplest elements in Python, such as literals, identifiers, and enclosures.
+- **Expression**: Combinations of atoms and operators that can be evaluated to produce a value.
