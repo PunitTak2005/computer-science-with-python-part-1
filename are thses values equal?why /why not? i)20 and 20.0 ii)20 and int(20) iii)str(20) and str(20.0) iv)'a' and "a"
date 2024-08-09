@@ -1,0 +1,48 @@
+Let's evaluate each pair of values and determine whether they are equal (`==`) and why or why not.
+
+### i) `20` and `20.0`
+
+**Equality Check (`==`)**: Yes, they are equal.
+
+**Reason**: The integer `20` and the floating-point number `20.0` are considered equal when using the `==` operator because they represent the same numeric value. Python converts the integer to a float and compares their values.
+
+```python
+print(20 == 20.0)  # True
+```
+
+### ii) `20` and `int(20)`
+
+**Equality Check (`==`)**: Yes, they are equal.
+
+**Reason**: `20` is an integer, and `int(20)` is also an integer with the same value. They are identical in type and value, so they are equal.
+
+```python
+print(20 == int(20))  # True
+```
+
+### iii) `str(20)` and `str(20.0)`
+
+**Equality Check (`==`)**: No, they are not equal.
+
+**Reason**: `str(20)` converts the integer `20` to the string `"20"`, and `str(20.0)` converts the floating-point number `20.0` to the string `"20.0"`. These are different strings.
+
+```python
+print(str(20) == str(20.0))  # False
+```
+
+### iv) `'a'` and `"a"`
+
+**Equality Check (`==`)**: Yes, they are equal.
+
+**Reason**: `'a'` and `"a"` are both string literals representing the same single character `a`. In Python, single quotes and double quotes are interchangeable for defining string literals, so these two strings are equal.
+
+```python
+print('a' == "a")  # True
+```
+
+### Summary
+
+1. **20 and 20.0**: Equal, because they represent the same numeric value.
+2. **20 and int(20)**: Equal, because they are both integers with the same value.
+3. **str(20) and str(20.0)**: Not equal, because `"20"` is not the same as `"20.0"`.
+4. **'a' and "a"**: Equal, because they are both strings representing the same character.
