@@ -1,0 +1,9 @@
+str1 = '''Hell
+o'''
+str2 = '''Hell\
+    o'''
+
+print(len(str1)) # 6
+print(len(str2)) # 5
+
+print(len(str1) > len(str2)) # True
