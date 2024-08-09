@@ -1,0 +1,10 @@
+are  these numbers different from another ? 33,33.0,33j,33+j?
+
+a = 33
+b = 33.0
+c = 33j
+d = 33 + 1j
+
+types = (type(a), type(b), type(c), type(d))
+
+print(types)
