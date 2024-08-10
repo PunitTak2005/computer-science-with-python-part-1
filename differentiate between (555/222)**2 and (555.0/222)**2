@@ -1,0 +1,39 @@
+The expressions `(555/222)**2` and `(555.0/222)**2` differ in the type of division they perform and thus the resulting value and type:
+
+### `(555/222)**2`
+- Here, `555` and `222` are both integers.
+- In Python 3, the `/` operator performs floating-point division, regardless of the operand types.
+- The division `555/222` results in a floating-point number.
+- The result of the division is then squared.
+
+### `(555.0/222)**2`
+- Here, `555.0` is a floating-point number and `222` is an integer.
+- The `/` operator performs floating-point division since at least one operand is a floating-point number.
+- The division `555.0/222` results in a floating-point number.
+- The result of the division is then squared.
+
+### Calculation:
+
+1. **Integer Division (555/222):**
+   ```python
+   result1 = (555 / 222)**2
+   # result1 = (2.5)**2
+   # result1 = 2.503597122302158**2
+   # result1 = 6.268841636150824
+   ```
+
+2. **Floating-Point Division (555.0/222):**
+   ```python
+   result2 = (555.0 / 222)**2
+   # result2 = (2.5)**2
+   # result2 = 2.503597122302158**2
+   # result2 = 6.268841636150824
+   ```
+
+### Key Points:
+- **Division**: Both `555/222` and `555.0/222` perform floating-point division due to Python 3’s behavior of always returning a float with `/`.
+- **Result Type**: Both expressions yield a float.
+- **Final Result**: Both expressions produce the same numerical result after squaring.
+
+### Summary:
+While the types of the operands initially differ (`int` for `555` and `float` for `555.0`), both expressions ultimately perform floating-point division and yield the same numerical result. Therefore, in this specific case, there is no difference in the outcome. However, using a floating-point literal (`555.0`) makes it explicit that the operation is intended to involve floating-point arithmetic.
