@@ -1,0 +1,45 @@
+The `int()` function in Python is used to convert a valid numerical string or a number to an integer. If you try to convert a non-numeric string, such as `'a'`, to an integer, it will produce a `ValueError` because `'a'` is not a valid input for conversion to an integer.
+
+Here's an example:
+
+```python
+int('a')
+```
+
+This will raise the following error:
+
+```plaintext
+ValueError: invalid literal for int() with base 10: 'a'
+```
+
+### Explanation
+
+- **Function Purpose**: `int()` is designed to convert strings that represent whole numbers into integer objects.
+- **Invalid Input**: The character `'a'` is not a digit and cannot be interpreted as a number in base 10, which is the default base for integer conversion.
+- **Error Type**: Python raises a `ValueError` to indicate that the provided string is not a valid number and cannot be converted.
+
+### Examples of Valid Usage
+
+Here are some examples where `int()` works correctly:
+
+```python
+int('123')      # 123
+int('42')       # 42
+int('0')        # 0
+int('-56')      # -56
+int('101', 2)   # 5 (binary to decimal)
+int('7F', 16)   # 127 (hexadecimal to decimal)
+```
+
+### Examples of Invalid Usage
+
+Here are some examples that will produce a `ValueError`:
+
+```python
+int('a')        # ValueError
+int('12.34')    # ValueError: invalid literal for int() with base 10: '12.34'
+int('abc')      # ValueError
+int('1.23e10')  # ValueError
+```
+
+In summary, `int('a')` produces an error because `'a'` is not a valid literal for an integer conversion.
