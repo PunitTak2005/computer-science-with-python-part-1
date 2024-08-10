@@ -1,0 +1,49 @@
+In the expression `len('a') + 2 or int('a')`, Python does not produce an error because of how logical operators and short-circuit evaluation work in Python.
+
+### Explanation of Short-Circuit Evaluation
+
+Short-circuit evaluation means that Python evaluates logical expressions from left to right and stops as soon as the outcome is determined. For the `or` operator:
+
+- If the left operand is `True` (or truthy), Python returns the left operand and does not evaluate the right operand.
+- If the left operand is `False` (or falsy), Python evaluates the right operand and returns its value.
+
+### Expression Breakdown
+
+```python
+len('a') + 2 or int('a')
+```
+
+1. **len('a') + 2**:
+   - `len('a')` calculates the length of the string `'a'`, which is `1`.
+   - `1 + 2` equals `3`.
+
+2. **or int('a')**:
+   - Since `len('a') + 2` evaluates to `3` (which is truthy), Python does not evaluate `int('a')`.
+   - The expression short-circuits and returns `3`.
+
+### Why No Error?
+
+The `int('a')` part of the expression is never evaluated because the left side of the `or` operator (`len('a') + 2`) is already truthy. Therefore, `int('a')` is never called, and no `ValueError` is raised.
+
+### Examples to Illustrate
+
+Here are some more examples to illustrate this behavior:
+
+1. **Truthy Left Operand:**
+   ```python
+   1 or int('a')  # Returns 1 (no error, int('a') is not evaluated)
+   ```
+   
+2. **Falsy Left Operand:**
+   ```python
+   0 or int('a')  # Raises ValueError, because 0 is falsy, so int('a') is evaluated
+   ```
+
+3. **Using `and` Operator:**
+   ```python
+   len('a') + 2 and int('a')  # Raises ValueError, because and evaluates both sides
+   ```
+
+### Conclusion
+
+The `len('a') + 2 or int('a')` expression does not raise an error because the first part (`len('a') + 2`) is evaluated to `3`, which is truthy, causing the short-circuit evaluation to skip the `int('a')` part.
