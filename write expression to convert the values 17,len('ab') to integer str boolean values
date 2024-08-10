@@ -1,0 +1,48 @@
+Sure! Here are the expressions to convert the values `17` and `len('ab')` to integer, string, and boolean values:
+
+### For the value `17`:
+1. **Integer**: `17` (already an integer)
+2. **String**: `str(17)` 
+3. **Boolean**: `bool(17)` 
+
+### For the value `len('ab')` (which is `2`):
+1. **Integer**: `len('ab')` (already an integer, equal to `2`)
+2. **String**: `str(len('ab'))` 
+3. **Boolean**: `bool(len('ab'))`
+
+### Detailed Conversion:
+
+```python
+# Value 17
+value1 = 17
+int_value1 = int(value1)  # 17
+str_value1 = str(value1)  # '17'
+bool_value1 = bool(value1)  # True
+
+# Value len('ab')
+value2 = len('ab')  # 2
+int_value2 = int(value2)  # 2
+str_value2 = str(value2)  # '2'
+bool_value2 = bool(value2)  # True
+
+# Print results
+print(f"Integer: {int_value1}, String: '{str_value1}', Boolean: {bool_value1}")
+print(f"Integer: {int_value2}, String: '{str_value2}', Boolean: {bool_value2}")
+```
+
+### Output:
+
+```plaintext
+Integer: 17, String: '17', Boolean: True
+Integer: 2, String: '2', Boolean: True
+```
+
+### Explanation:
+
+- `int(17)` is already `17`, so no change is needed.
+- `str(17)` converts the integer `17` to the string `'17'`.
+- `bool(17)` converts the integer `17` to `True` because non-zero integers are truthy in Python.
+
+- `int(len('ab'))` is already `2`, so no change is needed.
+- `str(len('ab'))` converts the integer `2` to the string `'2'`.
+- `bool(len('ab'))` converts the integer `2` to `True` because non-zero integers are truthy in Python.
