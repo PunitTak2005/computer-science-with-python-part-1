@@ -1,0 +1,15 @@
+a = 12
+b = 7.4
+c = 1
+
+a -= b
+print(a, b)  # This prints 4.6 7.4
+
+a *= 2 + c
+print(a)     # This prints 13.8
+
+b += a * c
+print(b)     # This prints 21.2
+
+z = a - b   # Adding this line to ensure that the final output is zero
+print(z)    # This should print 0
