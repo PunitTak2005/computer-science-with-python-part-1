@@ -1,0 +1,19 @@
+The expression `3 or 10/0` does not report an error because of Python's short-circuit evaluation. In the `or` operation, if the first operand evaluates to `True` (which 3 does), the second operand is not evaluated, thus avoiding the division by zero error.
+
+To make Python report the divide-by-zero error, we can reverse the order of the operands. This way, the division by zero will be evaluated first, and it will raise an error.
+
+Here's the modified expression:
+
+```python
+10 / 0 or 3
+```
+
+This will cause Python to evaluate `10 / 0` first, which will raise a `ZeroDivisionError`. The `or` operator won't get a chance to short-circuit because the error occurs before it can evaluate the second operand.
+
+Let's see it in action:
+
+```python
+10 / 0 or 3
+```
+
+Running this code will raise a `ZeroDivisionError`.
