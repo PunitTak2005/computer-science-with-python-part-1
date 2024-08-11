@@ -1,0 +1,50 @@
+wap to obtain x,y,z from user and calculate expression : 4x^2 + 3y^3 + 9z + 6pi
+
+Here's a Python program that prompts the user to enter values for \(x\), \(y\), and \(z\), and then calculates the expression \(4x^2 + 3y^3 + 9z + 6\pi\):
+
+```python
+import math
+
+# Function to calculate the expression
+def calculate_expression(x, y, z):
+    result = 4 * (x ** 2) + 3 * (y ** 3) + 9 * z + 6 * math.pi
+    return result
+
+# Get input from the user
+x = float(input("Enter the value for x: "))
+y = float(input("Enter the value for y: "))
+z = float(input("Enter the value for z: "))
+
+# Calculate the expression
+expression_result = calculate_expression(x, y, z)
+
+# Print the result
+print(f"The result of the expression 4x^2 + 3y^3 + 9z + 6pi is: {expression_result}")
+```
+
+### Explanation:
+1. **Importing the math Module:**
+   - The `math` module is imported to access the value of \(\pi\).
+
+2. **Function Definition:**
+   - `calculate_expression(x, y, z)`: This function takes \(x\), \(y\), and \(z\) as inputs and calculates the expression \(4x^2 + 3y^3 + 9z + 6\pi\).
+
+3. **User Input:**
+   - The `input()` function is used to obtain values for \(x\), \(y\), and \(z\) from the user. These inputs are converted to `float` to allow for decimal values.
+
+4. **Calculation:**
+   - The `calculate_expression` function is called with the user inputs to calculate the expression.
+
+5. **Output:**
+   - The result is printed using an f-string for formatting.
+
+### Running the Program:
+When you run the program, it will prompt you to enter values for \(x\), \(y\), and \(z\). After you enter these values, it will compute and display the result of the expression.
+
+Example:
+```
+Enter the value for x: 2
+Enter the value for y: 1.5
+Enter the value for z: 3
+The result of the expression 4x^2 + 3y^3 + 9z + 6pi is: 72.84955592153876
+```
