@@ -1,0 +1,61 @@
+predict the output if e is given input as "True"
+a=True
+b=0<5
+print(a==b)
+print(a is b)
+c=str(a)
+d=str(b)
+print(c==d)
+print(c is d)
+e = input("Enter :")
+print(c==e)
+print(c is e)
+
+Let's analyze the code step by step to predict the output when `e` is given the input as "True":
+
+```python
+a = True
+b = 0 < 5
+print(a == b)
+print(a is b)
+c = str(a)
+d = str(b)
+print(c == d)
+print(c is d)
+e = input("Enter: ")
+print(c == e)
+print(c is e)
+```
+
+1. `a = True`: `a` is set to `True`.
+2. `b = 0 < 5`: This is a comparison operation. Since `0 < 5` is `True`, `b` is also set to `True`.
+
+3. `print(a == b)`: This checks if `a` is equal to `b`. Both `a` and `b` are `True`, so this will print `True`.
+
+4. `print(a is b)`: This checks if `a` and `b` are the same object. Both `a` and `b` are `True`, which is a singleton in Python, so this will print `True`.
+
+5. `c = str(a)`: `c` is set to the string representation of `a`, which is `"True"`.
+
+6. `d = str(b)`: `d` is set to the string representation of `b`, which is also `"True"`.
+
+7. `print(c == d)`: This checks if `c` is equal to `d`. Both `c` and `d` are `"True"`, so this will print `True`.
+
+8. `print(c is d)`: This checks if `c` and `d` are the same object. Although `c` and `d` have the same value (`"True"`), they are different string objects, so this will print `False`.
+
+9. `e = input("Enter: ")`: This prompts the user for input. If the input is `"True"`, then `e` will be set to `"True"`.
+
+10. `print(c == e)`: This checks if `c` is equal to `e`. Since both `c` and `e` are `"True"`, this will print `True`.
+
+11. `print(c is e)`: This checks if `c` and `e` are the same object. Although `c` and `e` have the same value (`"True"`), they are different string objects, so this will print `False`.
+
+Based on the input `e` being `"True"`, the output will be:
+
+```plaintext
+True
+True
+True
+False
+Enter: True
+True
+False
+```
