@@ -1,0 +1,43 @@
+Here's the code with detailed comments explaining each step:
+
+```python
+a = 12     # Initialize a with 12
+b = 7.4    # Initialize b with 7.4
+c = 1      # Initialize c with 1
+
+a -= b     # Subtract b from a, equivalent to a = a - b
+print(a, b)  # Print the values of a and b after the subtraction
+
+a *= 2 + c  # Multiply a by (2 + c), equivalent to a = a * (2 + c)
+print(a)     # Print the value of a after the multiplication
+
+b += a * c  # Add a multiplied by c to b, equivalent to b = b + (a * c)
+print(b)     # Print the value of b after the addition
+```
+
+Let's execute the code step by step to see the results:
+
+1. `a = 12` and `b = 7.4`
+2. `a -= b` => `a = 12 - 7.4` => `a = 4.6`
+3. `print(a, b)` prints: `4.6 7.4`
+4. `a *= 2 + c` => `a = 4.6 * (2 + 1)` => `a = 4.6 * 3` => `a = 13.8`
+5. `print(a)` prints: `13.8`
+6. `b += a * c` => `b = 7.4 + 13.8 * 1` => `b = 7.4 + 13.8` => `b = 21.2`
+7. `print(b)` prints: `21.2`
+
+Here's the full code and its output:
+
+```python
+a = 12
+b = 7.4
+c = 1
+
+a -= b
+print(a, b)  # Output: 4.6 7.4
+
+a *= 2 + c
+print(a)     # Output: 13.8
+
+b += a * c
+print(b)     # Output: 21.2
+```
