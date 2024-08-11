@@ -1,0 +1,42 @@
+WAP to  that reads a number of seconds and prints it in form:mins and seconds,e.g,200 seconds are printed as 3 mins and 20 seconds
+
+Here's a Python program that reads a number of seconds from the user and prints it in the form of minutes and seconds:
+
+```python
+# Function to convert seconds to minutes and seconds
+def convert_seconds(seconds):
+    minutes = seconds // 60
+    remaining_seconds = seconds % 60
+    return minutes, remaining_seconds
+
+# Get input from the user
+seconds = int(input("Enter the number of seconds: "))
+
+# Convert the seconds
+minutes, remaining_seconds = convert_seconds(seconds)
+
+# Print the result
+print(f"{seconds} seconds are equal to {minutes} minutes and {remaining_seconds} seconds.")
+```
+
+### Explanation:
+1. **Function Definition:**
+   - `convert_seconds(seconds)`: This function takes the total number of seconds as input and calculates the number of minutes and remaining seconds. The `//` operator is used for integer division to get the number of minutes, and the `%` operator is used to get the remaining seconds.
+
+2. **User Input:**
+   - The `input()` function is used to obtain the number of seconds from the user. This input is converted to an `int` to ensure it's a whole number.
+
+3. **Conversion:**
+   - The `convert_seconds` function is called with the user input to convert the total seconds into minutes and remaining seconds.
+
+4. **Output:**
+   - The result is printed using an f-string for formatting, displaying the total seconds, calculated minutes, and remaining seconds.
+
+### Running the Program:
+When you run the program, it will prompt you to enter the number of seconds. After you enter the value, it will compute and display the equivalent time in minutes and seconds.
+
+Example:
+```
+Enter the number of seconds: 200
+200 seconds are equal to 3 minutes and 20 seconds.
+```
