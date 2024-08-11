@@ -1,0 +1,4 @@
+given a string s="12345" .can you nwrite an expression that gives sum of all the digits shown inside the string i.e,the program should be able to produce the result as 15(1+2+3+4+5).
+s = "12345"
+sum_of_digits = sum(int(digit) for digit in s)
+print(sum_of_digits)  # Output: 15
