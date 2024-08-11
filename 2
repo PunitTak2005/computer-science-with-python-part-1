@@ -1,0 +1,56 @@
+wap to obtain temperatures of  days and then display average temperature of the week
+
+Here's a Python program that prompts the user to enter the temperatures for each day of the week and then calculates and displays the average temperature:
+
+```python
+# Function to calculate the average temperature
+def calculate_average_temperature(temperatures):
+    return sum(temperatures) / len(temperatures)
+
+# List to store temperatures of each day
+temperatures = []
+
+# Get temperatures from the user for each day of the week
+days_of_week = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"]
+
+for day in days_of_week:
+    temp = float(input(f"Enter the temperature for {day}: "))
+    temperatures.append(temp)
+
+# Calculate the average temperature
+average_temperature = calculate_average_temperature(temperatures)
+
+# Print the result
+print(f"The average temperature for the week is: {average_temperature:.2f}")
+```
+
+### Explanation:
+1. **Function Definition:**
+   - `calculate_average_temperature(temperatures)`: This function takes a list of temperatures and returns the average temperature by summing the temperatures and dividing by the number of days.
+
+2. **List Initialization:**
+   - `temperatures = []`: An empty list is created to store the temperatures for each day.
+
+3. **Input Loop:**
+   - The program iterates over a list of days of the week and prompts the user to enter the temperature for each day. The entered temperature is converted to a float and added to the `temperatures` list.
+
+4. **Calculation:**
+   - The `calculate_average_temperature` function is called with the `temperatures` list to calculate the average temperature.
+
+5. **Output:**
+   - The average temperature is printed using an f-string with two decimal places.
+
+### Running the Program:
+When you run the program, it will prompt you to enter the temperature for each day of the week. After you have entered all the temperatures, it will compute and display the average temperature.
+
+Example:
+```
+Enter the temperature for Monday: 70
+Enter the temperature for Tuesday: 68
+Enter the temperature for Wednesday: 72
+Enter the temperature for Thursday: 71
+Enter the temperature for Friday: 69
+Enter the temperature for Saturday: 75
+Enter the temperature for Sunday: 73
+The average temperature for the week is: 71.14
+```
