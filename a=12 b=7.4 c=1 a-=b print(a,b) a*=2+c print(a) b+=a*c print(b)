@@ -1,0 +1,12 @@
+a = 12
+b = 7.4
+c = 1
+
+a -= b
+print(a, b)  # Output: 4.6 7.4
+
+a *= 2 + c
+print(a)     # Output: 13.8
+
+b += a * c
+print(b)     # Output: 21.2
