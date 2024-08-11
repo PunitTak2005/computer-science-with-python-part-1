@@ -1,0 +1,29 @@
+Let's go through each of the print statements in your code and understand the output:
+
+1. `print(c == d)`: This checks if the value of `c` is equal to the value of `d`.
+   - `c` is `2`.
+   - `d` is `1 + 1`, which is `2`.
+   - Since `2 == 2` is `True`, this will print `True`.
+
+2. `print(c is d)`: This checks if `c` and `d` are the same object in memory.
+   - `c` is `2`.
+   - `d` is `2`.
+   - Small integers are cached in Python, so `2 is 2` will be `True`. Thus, this will print `True`.
+
+3. `print(g == h)`: This checks if the value of `g` is equal to the value of `h`.
+   - `g` is `2.0`.
+   - `h` is `1.0 + 1.0`, which is `2.0`.
+   - Since `2.0 == 2.0` is `True`, this will print `True`.
+
+4. `print(g is h)`: This checks if `g` and `h` are the same object in memory.
+   - `g` is `2.0`.
+   - `h` is `2.0`.
+   - Floats are not necessarily cached in the same way small integers are. Even though they have the same value, they may not be the same object in memory. Thus, this will print `False`.
+
+So the output of your code will be:
+```python
+True
+True
+True
+False
+```
